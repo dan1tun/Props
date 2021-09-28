@@ -54,8 +54,6 @@ public class PropController : PlayerController
                 //quitamos el outline del objeto
                 obj.GetComponent<Outline>().enabled = false;
 
-                //lo escondemos en los demás clientes
-                RpcHideBody(this.playerId);
 
                 // enviamos solicitud al servidor para replicarlo el nuevo cuerpo
                 //CmdChangeBody(obj.name)
@@ -69,23 +67,37 @@ public class PropController : PlayerController
             base.Action(context);
     }
 
+    /// <summary>
+    /// Prop is selected. Instantiate on server, then clone on clients
+    /// </summary>
+    /// <param name="objId">Name of the object</param>
+    /// <param name="parentId">NetID of the player</param>
     [Command]
     private void CmdChangeBody(string objId, uint parentId)
     {
+        //lo escondemos en los demás clientes
+        RpcHideBody(parentId);
+
+        //Recuperamos el jugador
+        Transform parent = NetworkServer.spawned[parentId].gameObject.transform.Find("NewBody");
+
         //clonamos el objeto
         GameObject obj = GameObject.Find(objId);
-        Transform parent = NetworkServer.spawned[parentId].gameObject.transform.Find("NewBody");
-        Debug.Log("Parent: " + parent.name);
         GameObject newObject = Instantiate(propTest, parent, false);
-        newObject.transform.localPosition = Vector3.zero;
         newObject.tag = "NewBody";
-        newObject.GetComponent<ParentHelper>().parentNetId = this.netId;
+        newObject.GetComponent<ParentHelper>().parentNetId = parentId;
+
+        //instanciamos en servidor
         NetworkServer.Spawn(newObject, connectionToClient);
 
-        //sincronizamos las propiedades en todos los clientes
-        //RpcHideBody(objId);
+        //reiniciamos la vista en los clientes
+        RpcResetLocalPositionOfNewBody(parentId);
     }
 
+    /// <summary>
+    /// Hide the baseBody of the player, and show the newBody
+    /// </summary>
+    /// <param name="id">NetId of the player</param>
     [ClientRpc]
     private void RpcHideBody(uint id)
     {
@@ -97,5 +109,22 @@ public class PropController : PlayerController
         Transform target = NetworkClient.spawned[id].transform;
         target.transform.Find("NewBody").gameObject.SetActive(true);
         target.transform.Find("BaseBody").gameObject.SetActive(false);
+    }
+    /// <summary>
+    /// Reset the position of the newBody and sets its rotation equal to its parent
+    /// </summary>
+    /// <param name="id"></param>
+    [ClientRpc]
+    private void RpcResetLocalPositionOfNewBody(uint id)
+    {
+        Transform player = NetworkClient.spawned[id].transform;
+        Transform newBody = player.transform.Find("NewBody");
+
+        for (int i = 0; i < newBody.childCount; i++)
+        {
+            Transform child = newBody.GetChild(i);
+            child.localPosition = Vector3.zero;
+            child.rotation = player.rotation;
+        }
     }
 }
