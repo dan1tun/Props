@@ -75,23 +75,11 @@ public class PropController : PlayerController
     [Command]
     private void CmdChangeBody(string objId, uint parentId)
     {
-        //lo escondemos en los demás clientes
+        //Hacemos el cambio de cuerpo en los demás clientes
         RpcHideBody(parentId);
 
-        //Recuperamos el jugador
-        Transform parent = NetworkServer.spawned[parentId].gameObject.transform.Find("NewBody");
-
         //clonamos el objeto
-        GameObject obj = GameObject.Find(objId);
-        GameObject newObject = Instantiate(propTest, parent, false);
-        newObject.tag = "NewBody";
-        newObject.GetComponent<ParentHelper>().parentNetId = parentId;
-
-        //instanciamos en servidor
-        NetworkServer.Spawn(newObject, connectionToClient);
-
-        //reiniciamos la vista en los clientes
-        RpcResetLocalPositionOfNewBody(parentId);
+        RpcClone(objId, parentId);
     }
 
     /// <summary>
@@ -101,30 +89,23 @@ public class PropController : PlayerController
     [ClientRpc]
     private void RpcHideBody(uint id)
     {
-        //GameObject obj = GameObject.Find(objId);
-        //clonamos el objeto
-        //GameObject newObject = Instantiate(propTest, this.transform.position, obj.transform.rotation, parent: newBody.transform);
-        //newObject.tag = "NewBody";
-        //newObject.GetComponent<ParentHelper>().parentNetId = this.netId;
         Transform target = NetworkClient.spawned[id].transform;
         target.transform.Find("NewBody").gameObject.SetActive(true);
         target.transform.Find("BaseBody").gameObject.SetActive(false);
     }
     /// <summary>
-    /// Reset the position of the newBody and sets its rotation equal to its parent
+    /// Clone the prop locally
     /// </summary>
-    /// <param name="id"></param>
+    /// <param name="objId">Prop name</param>
+    /// <param name="parentId">Player NetID</param>
     [ClientRpc]
-    private void RpcResetLocalPositionOfNewBody(uint id)
+    private void RpcClone(string objId, uint parentId)
     {
-        Transform player = NetworkClient.spawned[id].transform;
-        Transform newBody = player.transform.Find("NewBody");
-
-        for (int i = 0; i < newBody.childCount; i++)
-        {
-            Transform child = newBody.GetChild(i);
-            child.localPosition = Vector3.zero;
-            child.rotation = player.rotation;
-        }
+        Transform parent = NetworkClient.spawned[parentId].gameObject.transform.Find("NewBody");
+        GameObject prop = GameObject.Find(objId);
+        GameObject newObject = Instantiate(prop, parent, false);
+        newObject.tag = "NewBody";
+        newObject.transform.localPosition = Vector3.zero;
+        newObject.transform.localRotation = Quaternion.identity;
     }
 }

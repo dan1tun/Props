@@ -496,8 +496,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 8324692102862534728, guid: c825ccbddb5f74a7eaa74fe4c66cb710, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 1
-  spawnPrefabs:
-  - {fileID: 4048778266739623069, guid: 93f9f6d35bf47455e81dd76dd83c3b4f, type: 3}
+  spawnPrefabs: []
 --- !u!1 &787812461
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,10 +750,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 49793850}
     m_Modifications:
-    - target: {fileID: -120510332035366327, guid: 93f9f6d35bf47455e81dd76dd83c3b4f, type: 3}
-      propertyPath: sceneId
-      value: 424559357
-      objectReference: {fileID: 0}
     - target: {fileID: 4048778266739623069, guid: 93f9f6d35bf47455e81dd76dd83c3b4f, type: 3}
       propertyPath: m_Name
       value: Prop
