@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7603450461717076036}
   - component: {fileID: 5353019102830432781}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ActionCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4102444636593462713}
   - component: {fileID: 2156128869505565764}
   - component: {fileID: 3604322199288085981}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2886779785402780418}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BaseBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,12 +168,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8324692102862534774}
   - component: {fileID: -8193859152563623435}
-  - component: {fileID: 1198288432007573024}
+  - component: {fileID: 6366277379178146950}
   - component: {fileID: 8324692102862534771}
   - component: {fileID: 8324692102862534773}
   - component: {fileID: 6088392099643609593}
   - component: {fileID: -8104334673394219100}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player_Prop
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1198288432007573024}
+      - m_Target: {fileID: 6366277379178146950}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1198288432007573024}
+      - m_Target: {fileID: 6366277379178146950}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: Look
         m_Mode: 0
@@ -256,8 +256,8 @@ MonoBehaviour:
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1198288432007573024}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 6366277379178146950}
+        m_TargetAssemblyTypeName: PropController, Assembly-CSharp
         m_MethodName: Action
         m_Mode: 0
         m_Arguments:
@@ -311,15 +311,43 @@ MonoBehaviour:
     m_ActionId: 9349aca5-32b9-4a92-b68f-bc4d799922ef
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 7aec3a47-cd2a-4157-8fc7-4d19e08b3846
     m_ActionName: Player/Fire[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6366277379178146950}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c2d392b6-1759-4473-92ce-a682c7c43074
+    m_ActionName: Player/Menu[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1198288432007573024
+--- !u!114 &6366277379178146950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,11 +361,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  speed: 3
-  actionDistance: 5
+  speed: 5
+  actionDistance: 2
+  health: 0
+  menuScript: {fileID: 0}
   baseBody: {fileID: 8270532876365559769}
   newBody: {fileID: 8951189080541595758}
-  propTest: {fileID: 4048778266739623069, guid: 93f9f6d35bf47455e81dd76dd83c3b4f, type: 3}
 --- !u!136 &8324692102862534771
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -426,7 +455,7 @@ GameObject:
   - component: {fileID: 8324692104723603721}
   - component: {fileID: 8324692104723603720}
   - component: {fileID: 8324692104723603723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1002491260900056538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NewBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}

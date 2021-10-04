@@ -8,7 +8,6 @@ public class PropController : PlayerController
 {
     [SerializeField] private GameObject baseBody;
     [SerializeField] private GameObject newBody;
-    public GameObject propTest;
 
     public override void Start()
     {
