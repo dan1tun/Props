@@ -6,12 +6,44 @@ using UnityEngine.InputSystem;
 
 public class PropController : PlayerController
 {
-    [SerializeField] private GameObject baseBody;
-    [SerializeField] private GameObject newBody;
+    [SerializeField] private GameObject baseBody, newBody;
+    [SerializeField] private float afkTime = 15, afkTimeBetweenChecks = 2, distanceToCheck = 2;
+
+    private Vector3 lastPosition;
+    private float nextCheckTime, currentAfkTime;
+    private bool inPropMode;
 
     public override void Start()
     {
         base.Start();
+    }
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (inPropMode)
+            CheckMovement();
+    }
+
+    private void CheckMovement()
+    {
+       if (Time.time >= nextCheckTime)
+        {
+            Debug.Log("Checking...");
+            nextCheckTime = Time.time + afkTimeBetweenChecks;
+            Vector3 currentPosition = transform.position;
+
+            //si se ha movido lo suficiente, reiniciamos el tiempo
+            if (Vector3.Distance(lastPosition, currentPosition) >= distanceToCheck)
+                currentAfkTime = 0;
+            else if (currentAfkTime > afkTime)
+            {
+                Debug.Log("Time excedeed!");
+            }
+            lastPosition = currentPosition;
+        }
+        currentAfkTime += Time.fixedDeltaTime;
     }
 
     public override void OnTriggerEnter(Collider other)
@@ -57,6 +89,8 @@ public class PropController : PlayerController
                 // enviamos solicitud al servidor para replicarlo el nuevo cuerpo
                 //CmdChangeBody(obj.name)
                 CmdChangeBody(obj.name, this.playerId);
+
+                this.inPropMode = true;
 
                 break;
             }

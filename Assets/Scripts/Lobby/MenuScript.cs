@@ -16,7 +16,7 @@ public class MenuScript : MonoBehaviour
     public void Host()
     {
         networkManager.StartHost();
-        SwitchPanels(lobbyPanelActive: false); //escondemos los menús
+        SwitchPanels(lobbyPanelActive: false, gameUIPanelActive: true); //escondemos los menús, mostramos la UI 
     }
 
     public void SaveIP(string ip) => networkManager.networkAddress = ip;
@@ -24,7 +24,7 @@ public class MenuScript : MonoBehaviour
     public void Join()
     {
         networkManager.StartClient();
-        SwitchPanels(lobbyPanelActive: false); //escondemos los menús
+        SwitchPanels(lobbyPanelActive: false, gameUIPanelActive: true); //escondemos los menús, mostramos la UI 
     }
 
     public void Stop()
@@ -53,7 +53,7 @@ public class MenuScript : MonoBehaviour
     void Update()
     {
         //si estamos en pausa, mostramos el menú
-        gameUIPanel.SetActive(menuOpened);
+        gameMenuPanel.SetActive(menuOpened);
     }
 
     /// <summary>

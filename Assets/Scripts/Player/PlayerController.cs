@@ -46,11 +46,16 @@ public class PlayerController : NetworkBehaviour
     }
 
     [Client]
-
     public virtual void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
         Debug.Log("Player start");
+    }
+
+    [Client]
+    public virtual void Update()
+    {
+
     }
 
     [Client]
