@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PropController : PlayerController
 {
-    [SerializeField] private GameObject baseBody, newBody;
+    [SerializeField] private GameObject baseBody, newBody, propIndicator;
     [SerializeField] private float afkTime = 15, afkTimeBetweenChecks = 2, distanceToCheck = 2;
 
     private Vector3 lastPosition;
@@ -36,10 +36,14 @@ public class PropController : PlayerController
 
             //si se ha movido lo suficiente, reiniciamos el tiempo
             if (Vector3.Distance(lastPosition, currentPosition) >= distanceToCheck)
+            {
                 currentAfkTime = 0;
+                propIndicator.SetActive(false);
+            }
             else if (currentAfkTime > afkTime)
             {
                 Debug.Log("Time excedeed!");
+                propIndicator.SetActive(true);
             }
             lastPosition = currentPosition;
         }

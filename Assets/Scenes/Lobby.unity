@@ -306,6 +306,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2084712671205025881, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2084712671205025881, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.06666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2084712671205025881, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2084712671205025881, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8022600624210855136, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -353,6 +369,10 @@ PrefabInstance:
     - target: {fileID: 8022600624210855139, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
       propertyPath: m_Name
       value: NetworkManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8373593302050662288, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
