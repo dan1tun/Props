@@ -48,8 +48,14 @@ public class PlayerController : NetworkBehaviour
     [Client]
     public virtual void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();
         Debug.Log("Player start");
+        rigidBody = GetComponent<Rigidbody>();
+
+        //TODO: esto es feo. Mirar la forma de hacerlo en el lado del servidor (customnetworkmanager => OnServerAddPlayer / OnClientConnect
+        if (menuScript == null)
+        {
+            menuScript = GameObject.Find("NetworkManager").GetComponent<MenuScript>();
+        }
     }
 
     [Client]

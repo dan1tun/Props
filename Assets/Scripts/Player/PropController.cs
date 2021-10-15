@@ -6,8 +6,9 @@ using UnityEngine.InputSystem;
 
 public class PropController : PlayerController
 {
-    [SerializeField] private GameObject baseBody, newBody, propIndicator;
+    [SerializeField] private GameObject baseBody, newBody;
     [SerializeField] private float afkTime = 15, afkTimeBetweenChecks = 2, distanceToCheck = 2;
+    public GameObject propIndicator;
 
     private Vector3 lastPosition;
     private float nextCheckTime, currentAfkTime;
@@ -38,12 +39,14 @@ public class PropController : PlayerController
             if (Vector3.Distance(lastPosition, currentPosition) >= distanceToCheck)
             {
                 currentAfkTime = 0;
-                propIndicator.SetActive(false);
+                CmdSetAfk(this.playerId, false);
+                //propIndicator.SetActive(false);
             }
             else if (currentAfkTime > afkTime)
             {
                 Debug.Log("Time excedeed!");
-                propIndicator.SetActive(true);
+                CmdSetAfk(this.playerId, true);
+                //propIndicator.SetActive(true);
             }
             lastPosition = currentPosition;
         }
@@ -144,5 +147,28 @@ public class PropController : PlayerController
         newObject.tag = "NewBody";
         newObject.transform.localPosition = Vector3.zero;
         newObject.transform.localRotation = Quaternion.identity;
+    }
+
+
+
+    /// <summary>
+    /// Sends the clients information about the afk state of the prop player
+    /// </summary>
+    /// <param name="playerId">Prop player</param>
+    /// <param name="showAfk">Afk state</param>
+    [Command]
+    private void CmdSetAfk(uint playerId, bool showAfk)
+    {
+        RpcShowAfk(playerId, showAfk);
+    }
+    /// <summary>
+    /// Applies the afk state to the prop player
+    /// </summary>
+    /// <param name="playerId">Prop player</param>
+    /// <param name="showAfk">Afk state</param>
+    [ClientRpc]
+    private void RpcShowAfk(uint playerId, bool showAfk)
+    {
+        NetworkClient.spawned[playerId].GetComponent<PropController>().propIndicator.SetActive(showAfk);
     }
 }
