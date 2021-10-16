@@ -5,7 +5,7 @@ using Mirror;
 
 public class MenuScript : MonoBehaviour
 {
-    [SerializeField] private GameObject mainLobbyPanel, gameUIPanel, gameMenuPanel;
+    [SerializeField] private GameObject mainLobbyPanel, gameUIPanel, gameMenuPanel, deadPanel;
     [HideInInspector] public bool menuOpened;
 
     private CustomNetworkManager networkManager;
@@ -39,6 +39,12 @@ public class MenuScript : MonoBehaviour
                 break;
         }
     }
+
+    public void LeaveFromDead()
+    {
+        Stop();
+        deadPanel.SetActive(false);
+    }
     #endregion
 
     void Start()
@@ -62,10 +68,16 @@ public class MenuScript : MonoBehaviour
     /// <param name="lobbyActive">Activar o desactivar Panel_MainLobby</param>
     /// <param name="gameUIActive">Activar o desactivar Panel_GameUI</param>
     /// <param name="gameMenuActive">Activar o desactivar Panel_GameMenu</param>
-    private void SwitchPanels(bool lobbyPanelActive = true, bool gameUIPanelActive = false, bool gameMenuPanelActive = false)
+    private void SwitchPanels(bool lobbyPanelActive = true, bool gameUIPanelActive = false, bool gameMenuPanelActive = false, bool deadPanelActive = false)
     {
         mainLobbyPanel.SetActive(lobbyPanelActive);
         gameUIPanel.SetActive(gameUIPanelActive);
         gameMenuPanel.SetActive(gameUIPanelActive);
+        deadPanel.SetActive(deadPanelActive);
+    }
+
+    public void ShowDeadScreen()
+    {
+        this.deadPanel.SetActive(true);
     }
 }

@@ -28,6 +28,11 @@ public class PlayerController : NetworkBehaviour
 
     #endregion
 
+    public uint GetPlayerId()
+    {
+        return this.playerId;
+    }
+
     public override void OnStartClient()
     {
         // Cuando ha sido spawneado (clientside)
@@ -72,6 +77,12 @@ public class PlayerController : NetworkBehaviour
 
         HandleMovement();
         HandleRotation();
+    }
+
+    public void KillPlayer()
+    {
+        playerInput.DeactivateInput();
+        menuScript.ShowDeadScreen();
     }
 
     #region INPUT HANDLERS
@@ -145,25 +156,26 @@ public class PlayerController : NetworkBehaviour
 
     #region External callouts
 
+
+
     /// <summary>
     /// Damages the player.
     /// </summary>
     /// <param name="damage">Quantity of damage</param>
-    /// <returns>Returns true if it dies.</returns>
-    public bool Damage(int damage)
+    [ClientRpc]
+    public void RpcSendDamage(uint playerId, int damage)
     {
-        health -= damage;
-        if (health <= 0)
+        PlayerController controller = NetworkClient.spawned[playerId].GetComponent<PlayerController>();
+
+        controller.health -= damage;
+        if (controller.health <= 0)
         {
-            health = 0; // para que no baje de 0
+            controller.health = 0; // para que no baje de 0
 
             //TODO: deberíamos matar al jugador. Por ahora, desconectamos su input
-            if (playerInput)
-                playerInput.DeactivateInput();
+            if (controller.playerInput)
+                controller.KillPlayer();
         }
-
-        return health == 0;
     }
-
     #endregion
 }

@@ -368,10 +368,10 @@ MonoBehaviour:
   menuScript: {fileID: 0}
   baseBody: {fileID: 8270532876365559769}
   newBody: {fileID: 8951189080541595758}
-  propIndicator: {fileID: 2394079720973120161}
   afkTime: 5
   afkTimeBetweenChecks: 1
   distanceToCheck: 0.5
+  propIndicator: {fileID: 2394079720973120161}
 --- !u!136 &8324692102862534771
 CapsuleCollider:
   m_ObjectHideFlags: 0

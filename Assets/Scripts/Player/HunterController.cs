@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,9 +26,18 @@ public class HunterController : PlayerController
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
         foreach (var hit in hitEnemies)
         {
+            if (!hit.CompareTag("Player"))
+                return;
             Debug.Log("HIT! " + hit.name);
-            if (hit.GetComponent<PlayerController>().Damage(damage))
-                Debug.Log("He is dead!");
+            // get the player id
+            uint playerId = hit.GetComponent<PlayerController>().GetPlayerId();
+            CmdSendDamage(playerId, damage);
         }
+    }
+
+    [Command]
+    void CmdSendDamage(uint playerId, int damage)
+    {
+        NetworkClient.spawned[playerId].GetComponent<PlayerController>().RpcSendDamage(playerId, damage);
     }
 }
