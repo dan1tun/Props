@@ -9,6 +9,7 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private float speed = 0;
     [SerializeField] private float actionDistance;
     [SerializeField] private int health;
+    [SerializeField] private GameObject virtualCamera, mainCameraObject;
 
     [HideInInspector] public MenuScript menuScript;
 
@@ -23,8 +24,8 @@ public class PlayerController : NetworkBehaviour
 
     #region Components
     private Rigidbody rigidBody = new Rigidbody();
-    private Camera mainCamera;
     private PlayerInput playerInput;
+    private Camera mainCamera;
 
     #endregion
 
@@ -47,6 +48,12 @@ public class PlayerController : NetworkBehaviour
 
         playerInput = GetComponent<PlayerInput>();
         playerInput.enabled = true;
+
+        //setup camera for this player
+        mainCameraObject.SetActive(true);
+        virtualCamera.SetActive(true);
+        mainCameraObject.transform.parent = null;
+        virtualCamera.transform.parent = null;
         mainCamera = Camera.main;
     }
 
