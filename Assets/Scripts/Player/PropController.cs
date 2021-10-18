@@ -142,10 +142,15 @@ public class PropController : PlayerController
     private void RpcClone(string objId, uint parentId)
     {
         Transform parent = NetworkClient.spawned[parentId].gameObject.transform.Find("NewBody");
+
+        //primero eliminamos lo que pueda tener antes
+        foreach (Transform child in parent)
+            GameObject.Destroy(child.gameObject);
+        
         GameObject prop = GameObject.Find(objId);
         GameObject newObject = Instantiate(prop, parent, false);
         newObject.tag = "NewBody";
-        newObject.transform.localPosition = Vector3.zero;
+        newObject.transform.localPosition = new Vector3(0f, prop.transform.position.y - this.transform.position.y, 0f);
         newObject.transform.localRotation = Quaternion.identity;
     }
 
