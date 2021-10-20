@@ -44,13 +44,15 @@ public class PropController : PlayerController
             }
             else if (currentAfkTime > afkTime)
             {
-                Debug.Log("Time excedeed!");
+                Debug.Log("Time excedeed! CurrentAfkTime: " + currentAfkTime + " // afkTime: " + afkTime);
                 CmdSetAfk(this.playerId, true);
                 //propIndicator.SetActive(true);
             }
             lastPosition = currentPosition;
+
+
+            currentAfkTime += afkTimeBetweenChecks;
         }
-        currentAfkTime += Time.fixedDeltaTime;
     }
 
     public override void OnTriggerEnter(Collider other)

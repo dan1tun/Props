@@ -16,6 +16,7 @@ public class CustomNetworkManager : NetworkManager
     [SerializeField] private GameObject hunterPrefab, propPrefab;
 
     int currentHunters = 0, currentProps = 0, currentPlayers = 0;
+    Dictionary<string, Enums.PlayerType> listOfConnections = new Dictionary<string, Enums.PlayerType>();
 
     public override void Start()
     {
@@ -42,7 +43,7 @@ public class CustomNetworkManager : NetworkManager
         bool spawnHunter = false;
         if (currentHunters < maxHunters)
         {
-            if (currentHunters == 0) //first player will always be a hunter (TODO: do it in a pre-lobby!
+            if (currentHunters == 0 && Mathf.Round(Random.Range(0,1)) == 1) //first player will have a 1/2 prob. to be a hunter (TODO: do it in a pre-lobby!)
                 spawnHunter = true;
             else if (currentHunters >= currentProps) //if theres no props, then it is a prop
                 spawnHunter = false;
@@ -67,6 +68,7 @@ public class CustomNetworkManager : NetworkManager
             player = startPos != null
                 ? Instantiate(hunterPrefab, startPos.position, startPos.rotation)
                 : Instantiate(hunterPrefab);
+            listOfConnections.Add(conn.address, Enums.PlayerType.Hunter);
         }
         else
         {
@@ -74,6 +76,7 @@ public class CustomNetworkManager : NetworkManager
             player = startPos != null
                 ? Instantiate(propPrefab, startPos.position, startPos.rotation)
                 : Instantiate(propPrefab);
+            listOfConnections.Add(conn.address, Enums.PlayerType.Prop);
         }
         currentPlayers++;
 
@@ -88,7 +91,24 @@ public class CustomNetworkManager : NetworkManager
 
     public override void OnClientConnect(NetworkConnection conn)
     {
-        base.OnClientConnect(conn);        // you can send the message here, or wherever else you want
+        base.OnClientConnect(conn);
 
+    }
+
+    public override void OnClientDisconnect(NetworkConnection conn)
+    {
+        //check what type of player it was
+        switch (listOfConnections[conn.address])
+        {
+            case Enums.PlayerType.Hunter:
+                currentHunters--;
+                break;
+            case Enums.PlayerType.Prop:
+                currentPlayers--;
+                break;
+        }
+        currentPlayers--;
+
+        base.OnClientDisconnect(conn);
     }
 }
