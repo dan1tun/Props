@@ -43,7 +43,7 @@ public class CustomNetworkManager : NetworkManager
         bool spawnHunter = false;
         if (currentHunters < maxHunters)
         {
-            if (currentHunters == 0 && Mathf.Round(Random.Range(0,1)) == 1) //first player will have a 1/2 prob. to be a hunter (TODO: do it in a pre-lobby!)
+            if (currentHunters == 0 && Random.value < 0.5f) //first player will have a 1/2 prob. to be a hunter (TODO: do it in a pre-lobby!)
                 spawnHunter = true;
             else if (currentHunters >= currentProps) //if theres no props, then it is a prop
                 spawnHunter = false;
