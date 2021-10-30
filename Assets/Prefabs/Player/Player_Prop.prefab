@@ -138,7 +138,7 @@ MonoBehaviour:
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 6.85
+  m_CameraDistance: 8
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -186,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4691007215285712332}
   m_LocalRotation: {x: 0.3535534, y: -0.61237246, z: 0.3535534, w: 0.61237246}
-  m_LocalPosition: {x: 4.843682, y: 4.843682, z: 0.00000073887827}
+  m_LocalPosition: {x: 4.843682, y: 10, z: 0.00000073887827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8324692102862534774}
@@ -668,6 +668,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   speed: 3
+  detectionRange: 10
   actionDistance: 2
   health: 1
   virtualCamera: {fileID: 8044189857774228455}

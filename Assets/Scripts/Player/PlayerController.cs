@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : NetworkBehaviour
 {
     [SerializeField] private float speed = 0;
+    [SerializeField] private float detectionRange = 7;
     [SerializeField] private float actionDistance;
     [SerializeField] private int health;
     [SerializeField] private GameObject virtualCamera, mainCameraObject;
@@ -100,7 +101,7 @@ public class PlayerController : NetworkBehaviour
 
     public void Move(InputAction.CallbackContext context) => moveVector = context.ReadValue<Vector2>();
 
-    public void OpenMenu(InputAction.CallbackContext context) => menuScript.menuOpened = !menuScript.menuOpened; 
+    public void OpenMenu(InputAction.CallbackContext context) => menuScript.menuOpened = !menuScript.menuOpened;
 
     public virtual void Fire(InputAction.CallbackContext context) => fireStarted = true;
 
@@ -159,6 +160,7 @@ public class PlayerController : NetworkBehaviour
         }
         inRange.Remove(other.gameObject);
     }
+
     #endregion
 
     #region External callouts
