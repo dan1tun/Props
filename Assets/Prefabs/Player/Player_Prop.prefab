@@ -675,9 +675,10 @@ MonoBehaviour:
   menuScript: {fileID: 0}
   baseBody: {fileID: 8270532876365559769}
   newBody: {fileID: 8951189080541595758}
-  afkTime: 15
-  afkTimeBetweenChecks: 2
-  distanceToCheck: 4
+  afkTime: 30
+  afkTimeBetweenChecks: 0.5
+  distanceToCheck: 1
+  transformCooldown: 30
   propIndicator: {fileID: 2394079720973120161}
 --- !u!136 &8324692102862534771
 CapsuleCollider:

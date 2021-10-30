@@ -7,11 +7,11 @@ using UnityEngine.InputSystem;
 public class PropController : PlayerController
 {
     [SerializeField] private GameObject baseBody, newBody;
-    [SerializeField] private float afkTime = 15, afkTimeBetweenChecks = 2, distanceToCheck = 2;
+    [SerializeField] private float afkTime = 30, afkTimeBetweenChecks = 0.5f, distanceToCheck = 0.2f, transformCooldown = 30;
     public GameObject propIndicator;
 
     private Vector3 lastPosition;
-    private float nextCheckTime, currentAfkTime;
+    private float nextCheckTime, currentAfkTime, nextTransformTime;
     private bool inPropMode;
 
     public override void Start()
@@ -29,7 +29,7 @@ public class PropController : PlayerController
 
     private void CheckMovement()
     {
-       if (Time.time >= nextCheckTime)
+        if (Time.time >= nextCheckTime)
         {
             Debug.Log("Checking...");
             nextCheckTime = Time.time + afkTimeBetweenChecks;
@@ -39,6 +39,7 @@ public class PropController : PlayerController
             if (Vector3.Distance(lastPosition, currentPosition) >= distanceToCheck)
             {
                 currentAfkTime = 0;
+                menuScript.UpdateCooldown(Enums.CooldownType.AFK, afkTime);
                 CmdSetAfk(this.playerId, false);
                 //propIndicator.SetActive(false);
             }
@@ -84,24 +85,36 @@ public class PropController : PlayerController
         bool continueAction = true;
 
         //buscamos si tenemos un prop en rango para transformarnos
-        foreach (GameObject obj in inRange)
+        if (Time.fixedTime >= nextTransformTime)
         {
-            if (obj.CompareTag("Prop"))
+            foreach (GameObject obj in inRange)
             {
-                Debug.Log("Prop found");
-                continueAction = false;
+                if (obj.CompareTag("Prop"))
+                {
+                    //disables the default action (base)
+                    continueAction = false;
 
-                //quitamos el outline del objeto
-                obj.GetComponent<Outline>().enabled = false;
+                    //quitamos el outline del objeto
+                    obj.GetComponent<Outline>().enabled = false;
 
 
-                // enviamos solicitud al servidor para replicarlo el nuevo cuerpo
-                //CmdChangeBody(obj.name)
-                CmdChangeBody(obj.name, this.playerId);
+                    // enviamos solicitud al servidor para replicarlo el nuevo cuerpo
+                    //CmdChangeBody(obj.name)
+                    CmdChangeBody(obj.name, this.playerId);
 
-                this.inPropMode = true;
+                    // sets the prop mode to true, so we know we did it
+                    this.inPropMode = true;
 
-                break;
+
+                    // creates the AFK cooldown
+                    menuScript.NewCooldown(Enums.CooldownType.AFK, afkTime);
+
+                    // sets the cooldown and shows it in UI
+                    menuScript.NewCooldown(Enums.CooldownType.Transform, transformCooldown);
+                    nextTransformTime = Time.fixedTime + transformCooldown;
+
+                    break;
+                }
             }
         }
 
@@ -148,7 +161,7 @@ public class PropController : PlayerController
         //primero eliminamos lo que pueda tener antes
         foreach (Transform child in parent)
             GameObject.Destroy(child.gameObject);
-        
+
         GameObject prop = GameObject.Find(objId);
         GameObject newObject = Instantiate(prop, parent, false);
         newObject.tag = "NewBody";

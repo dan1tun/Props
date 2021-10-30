@@ -6,4 +6,11 @@ namespace Enums
         Hunter,
         Prop
     }
+
+    public enum CooldownType
+    {
+        AFK,
+        Transform,
+        Melee
+    }
 }
