@@ -12,7 +12,7 @@ public class Interactive : NetworkBehaviour
 
 
     [Header("Door")]
-    [SerializeField] private Vector3 finalPosition;
+    [SerializeField] private Vector3 addPosition;
     [SerializeField] private bool opened = true;
     private Vector3 initialPosition;
 
@@ -74,12 +74,12 @@ public class Interactive : NetworkBehaviour
         if (opened)
         {
             opened = false;
-            transform.position = finalPosition;
+            transform.position += addPosition;
         }
         else
         {
             opened = true;
-            transform.position = initialPosition;
+            transform.position -= addPosition;
         }
     }
 }
