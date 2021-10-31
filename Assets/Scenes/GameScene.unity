@@ -3312,7 +3312,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 181626, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
       propertyPath: m_Name
-      value: PortalYellowIdle (1)
+      value: Portal amarillo 2
       objectReference: {fileID: 0}
     - target: {fileID: 479838, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
       propertyPath: m_RootOrder
@@ -3373,6 +3373,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479838, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
   m_PrefabInstance: {fileID: 428434058}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &428434060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 181626, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
+  m_PrefabInstance: {fileID: 428434058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &428434061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428434060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.0000038146973, y: -0.0000019073486, z: 0}
+--- !u!114 &428434062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428434060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e40331bc97247c3a08c1f92d12dbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetVector: {x: 0, y: 0, z: 0}
+  targetTransform: {fileID: 796064901}
+  cooldownForPlayer: 10
+  pairedPortals:
+  - {fileID: 683322237}
 --- !u!1001 &436353475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6317,7 +6352,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 181626, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
       propertyPath: m_Name
-      value: PortalYellowIdle
+      value: Portal amarillo 1
       objectReference: {fileID: 0}
     - target: {fileID: 479838, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
       propertyPath: m_RootOrder
@@ -6378,6 +6413,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479838, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
   m_PrefabInstance: {fileID: 683322235}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &683322237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 181626, guid: 220408bf957d7d941ae64bf85c18ddc6, type: 3}
+  m_PrefabInstance: {fileID: 683322235}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &683322238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683322237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.0000076293945, y: 0.000005722046, z: 0}
+--- !u!114 &683322239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683322237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e40331bc97247c3a08c1f92d12dbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetVector: {x: 0, y: 0, z: 0}
+  targetTransform: {fileID: 2003638196}
+  cooldownForPlayer: 10
+  pairedPortals:
+  - {fileID: 428434060}
 --- !u!1001 &689355878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7054,7 +7124,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100898, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
       propertyPath: m_Name
-      value: PortalBlueIdle
+      value: Portal azul 1
       objectReference: {fileID: 0}
     - target: {fileID: 435062, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
       propertyPath: m_RootOrder
@@ -7115,6 +7185,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 435062, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
   m_PrefabInstance: {fileID: 734729185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &734729187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100898, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
+  m_PrefabInstance: {fileID: 734729185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &734729188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734729187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.0000009536743, y: 0.0000038146973, z: 0}
+--- !u!114 &734729189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734729187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e40331bc97247c3a08c1f92d12dbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetVector: {x: 0, y: 0, z: 0}
+  targetTransform: {fileID: 1315142127}
+  cooldownForPlayer: 10
+  pairedPortals:
+  - {fileID: 1001359232}
 --- !u!1001 &745264649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8176,6 +8281,36 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &796064900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796064901}
+  m_Layer: 0
+  m_Name: Portal amarillo 2 target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &796064901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796064900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.66, y: 0, z: -19.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 824807063}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &798747459
 GameObject:
   m_ObjectHideFlags: 0
@@ -8489,6 +8624,10 @@ Transform:
   - {fileID: 1001359231}
   - {fileID: 683322236}
   - {fileID: 428434059}
+  - {fileID: 1315142127}
+  - {fileID: 1513440496}
+  - {fileID: 2003638196}
+  - {fileID: 796064901}
   m_Father: {fileID: 49793850}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10484,7 +10623,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100898, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
       propertyPath: m_Name
-      value: PortalBlueIdle (1)
+      value: Portal azul 2
       objectReference: {fileID: 0}
     - target: {fileID: 435062, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
       propertyPath: m_RootOrder
@@ -10545,6 +10684,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 435062, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
   m_PrefabInstance: {fileID: 1001359230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1001359232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100898, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
+  m_PrefabInstance: {fileID: 1001359230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1001359233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001359232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.0000019073486, y: -0.000005722046, z: 0}
+--- !u!114 &1001359234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001359232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e40331bc97247c3a08c1f92d12dbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetVector: {x: 0, y: 0, z: 0}
+  targetTransform: {fileID: 1513440496}
+  cooldownForPlayer: 10
+  pairedPortals:
+  - {fileID: 734729187}
 --- !u!1001 &1016896212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13411,6 +13585,36 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &1315142126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1315142127}
+  m_Layer: 0
+  m_Name: Portal azul 1 target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1315142127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315142126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.15, y: 0, z: 20.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 824807063}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1316116474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14998,6 +15202,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1513440495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513440496}
+  m_Layer: 0
+  m_Name: Portal azul 2 target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1513440496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513440495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.9, y: 0, z: -19.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 824807063}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1529045973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16411,13 +16645,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675116998}
-  m_LocalRotation: {x: 0.21478161, y: -0, z: -0, w: 0.9766621}
-  m_LocalPosition: {x: -0.2150001, y: 1.831, z: -1.6310002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22, y: 1.61, z: -1.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1471101110328627662}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 24.805, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1675117000
 Light:
   m_ObjectHideFlags: 0
@@ -16430,8 +16664,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 0.0030693829, b: 0.8584906, a: 0.49019608}
-  m_Intensity: 1.42
-  m_Range: 5.18
+  m_Intensity: 8.26
+  m_Range: 9.6
   m_SpotAngle: 43
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -20359,6 +20593,36 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &2003638195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2003638196}
+  m_Layer: 0
+  m_Name: Portal amarillo 1 target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2003638196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003638195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.37, y: 0, z: 10.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 824807063}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2004605606
 PrefabInstance:
   m_ObjectHideFlags: 0
