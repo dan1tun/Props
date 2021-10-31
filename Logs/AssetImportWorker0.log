@@ -858,3 +858,9 @@ Received Import Request.
   path: Assets/Scenes/GameScene.unity
   artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/GameScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7c33d7ebe5f719436c5938600e0f01') in 0.002814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2491.513162 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Particles/Materials/dfk_candle_fire.mat
+  artifactKey: Guid(51771b35c5705ed429f56bd872cd2c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Particles/Materials/dfk_candle_fire.mat using Guid(51771b35c5705ed429f56bd872cd2c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06936d0ad99c3daa7abfe7aff8e5977') in 0.521695 seconds 
