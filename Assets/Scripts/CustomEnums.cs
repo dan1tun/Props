@@ -19,4 +19,12 @@ namespace Enums
         Button,
         Door
     }
+
+    public enum RoundType
+    {
+        Starting,
+        Preround,
+        HideAndSeek,
+        Flight
+    }
 }

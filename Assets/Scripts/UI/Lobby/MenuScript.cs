@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 using UnityEditor;
+using UnityEngine.UI;
 
-public class MenuScript : MonoBehaviour
+public class MenuScript : NetworkBehaviour
 {
     [Header("Canvas panels")]
     [SerializeField] private GameObject mainLobbyPanel;
     [SerializeField] private GameObject gameUIPanel;
     [SerializeField] private GameObject gameMenuPanel;
     [SerializeField] private GameObject deadPanel;
+    [SerializeField] private GameObject adminPanel;
 
     [Header("Game UI")]
     [SerializeField] private GameObject cooldownsPanel;
+    [SerializeField] private GameObject countdownInfoObject;
+    private Text countdownInfoText;
+    private float countdown;
+    private Enums.RoundType currentRoundType;
 
     [Header("Cooldowns")]
     [SerializeField] private GameObject cooldownTemplate;
@@ -23,6 +29,7 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private Sprite afkSprite, meleeSprite, transformSprite;
 
     [HideInInspector] public bool menuOpened;
+    [HideInInspector] public PlayerController playerController;
 
     private CustomNetworkManager networkManager;
     private Dictionary<Enums.CooldownType, GameObject> cooldowns = new Dictionary<Enums.CooldownType, GameObject>();
@@ -62,12 +69,20 @@ public class MenuScript : MonoBehaviour
         Stop();
         deadPanel.SetActive(false);
     }
+
+    public void StartGame()
+    {
+        this.adminPanel.SetActive(false);
+        playerController.StartGame();
+    }
+
     #endregion
 
     void Start()
     {
         networkManager = this.GetComponent<CustomNetworkManager>();
         menuOpened = false;
+        countdownInfoText = countdownInfoObject.GetComponent<Text>();
 
         // inicializamos la vista
         SwitchPanels();
@@ -77,6 +92,59 @@ public class MenuScript : MonoBehaviour
     {
         //si estamos en pausa, mostramos el menú
         gameMenuPanel.SetActive(menuOpened);
+
+
+        //mostramos la información de la partida (tipo y tiempo, ej: preronda - 50s)
+        if (countdown > 0)
+        {
+            string text = "";
+            switch (currentRoundType)
+            {
+                case Enums.RoundType.Starting:
+                    text = "Starting in... " + (int)countdown;
+                    break;
+                case Enums.RoundType.Preround:
+                    text = "Hunt begins in... " + (int)countdown;
+                    break;
+                case Enums.RoundType.HideAndSeek:
+                    text = "Survival ends in... " + (int)countdown; 
+                    break;
+                case Enums.RoundType.Flight:
+                    text = "Flight before... " + (int)countdown;
+                    break;
+                default:
+                    text = "Game didn't start yet";
+                    break;
+            }
+            this.countdownInfoText.text = text;
+            countdown -= Time.deltaTime;
+
+            if (countdown <= 0)
+            {
+                switch (currentRoundType)
+                {
+                    case Enums.RoundType.Starting:
+                        playerController.StartPreround();
+                        break;
+                    case Enums.RoundType.Preround:
+                        playerController.StartRound();
+                        break;
+                    case Enums.RoundType.HideAndSeek:
+                        playerController.StartFlight();
+                        break;
+                    case Enums.RoundType.Flight:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+    }
+
+    public void NewPhase(Enums.RoundType roundType, float time)
+    {
+        this.currentRoundType = roundType;
+        this.countdown = time;
     }
 
     /// <summary>
@@ -99,6 +167,14 @@ public class MenuScript : MonoBehaviour
     public void ShowDeadScreen()
     {
         this.deadPanel.SetActive(true);
+    }
+
+    /// <summary>
+    /// Shows the admin screen (enables the panel)
+    /// </summary>
+    public void ShowAdminScreen()
+    {
+        this.adminPanel.SetActive(true);
     }
 
     /// <summary>

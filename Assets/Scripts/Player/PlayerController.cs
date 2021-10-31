@@ -13,6 +13,8 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private GameObject virtualCamera, mainCameraObject;
 
     [HideInInspector] public MenuScript menuScript;
+    [HideInInspector, SyncVar] public bool isAdmin;
+    [HideInInspector, SyncVar(hook = "OnGameStarted")] public bool gameStarted;
 
     private int maxHealth;
     private Vector3 moveVector = new Vector3();
@@ -27,6 +29,7 @@ public class PlayerController : NetworkBehaviour
     private Rigidbody rigidBody = new Rigidbody();
     private PlayerInput playerInput;
     private Camera mainCamera;
+    private CustomNetworkManager networkManager;
 
     #endregion
 
@@ -61,13 +64,24 @@ public class PlayerController : NetworkBehaviour
     [Client]
     public virtual void Start()
     {
-        Debug.Log("Player start");
         rigidBody = GetComponent<Rigidbody>();
 
+
+        GameObject networkObj = GameObject.Find("NetworkManager");
+        networkManager = networkObj.GetComponent<CustomNetworkManager>();
         //TODO: esto es feo. Mirar la forma de hacerlo en el lado del servidor (customnetworkmanager => OnServerAddPlayer / OnClientConnect
         if (menuScript == null)
         {
-            menuScript = GameObject.Find("NetworkManager").GetComponent<MenuScript>();
+            Debug.Log("Menu was null");
+            menuScript = networkObj.GetComponent<MenuScript>();
+        }
+        menuScript.playerController = this;
+
+        // si el numero de jugadores es 1, soy el admin. Habilito el boton para empezar la partida
+        if (networkManager.numPlayers == 1)
+        {
+            isAdmin = true;
+            menuScript.ShowAdminScreen();
         }
     }
 
@@ -211,5 +225,53 @@ public class PlayerController : NetworkBehaviour
         Debug.Log("RpcAction id: " + netId);
         NetworkClient.spawned[netId].gameObject.GetComponent<Interactive>().Action();
     }
+    #endregion
+
+
+
+    #region Game states
+
+    /// <summary>
+    /// Starts game. Initial call (only admin)
+    /// </summary>
+    public void StartGame()
+    {
+        foreach (var player in NetworkServer.connections.Values)
+        {
+            player.identity.gameObject.GetComponent<PlayerController>().gameStarted = true;
+        }
+    }
+
+    void OnGameStarted(bool oldValue, bool newValue)
+    {
+        menuScript.NewPhase(Enums.RoundType.Starting, networkManager.initialTime);
+    }
+
+    /// <summary>
+    /// Starts preround. Client call (destroys prop door, changes UI info)
+    /// </summary>
+    public void StartPreround()
+    {
+        menuScript.NewPhase(Enums.RoundType.Preround, networkManager.preRoundTime);
+        GameObject.Destroy(networkManager.propDoor);
+    }
+
+    /// <summary>
+    /// Starts round. Client call (destroys hunter door, changes UI info)
+    /// </summary>
+    public void StartRound()
+    {
+        menuScript.NewPhase(Enums.RoundType.HideAndSeek, networkManager.roundTime);
+        GameObject.Destroy(networkManager.hunterDoor);
+    }
+    /// <summary>
+    /// Starts flight. Client call (to be decided, changes UI info)
+    /// </summary>
+    public void StartFlight()
+    {
+        //TODO: Start the scape phase (to be decided)
+    }
+
+
     #endregion
 }
