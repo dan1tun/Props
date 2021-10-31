@@ -13,4 +13,10 @@ namespace Enums
         Transform,
         Melee
     }
+
+    public enum InteractiveType
+    {
+        Button,
+        Door
+    }
 }

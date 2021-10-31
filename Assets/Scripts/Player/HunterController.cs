@@ -14,6 +14,15 @@ public class HunterController : PlayerController
 
     private float nextAttack;
 
+
+
+    public override void Action(InputAction.CallbackContext context)
+    {
+        //Unity hace 3 llamadas: Iniciado, cancelado y terminado. Solo nos interesa la primera
+        if (!context.started || !isLocalPlayer)
+            return;
+        base.Action(context);
+    }
     public override void Fire(InputAction.CallbackContext context)
     {
         //Unity hace 3 llamadas: Iniciado, cancelado y terminado. Solo nos interesa la primera

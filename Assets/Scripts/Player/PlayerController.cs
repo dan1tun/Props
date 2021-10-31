@@ -105,7 +105,17 @@ public class PlayerController : NetworkBehaviour
 
     public virtual void Fire(InputAction.CallbackContext context) => fireStarted = true;
 
-    public virtual void Action(InputAction.CallbackContext context) { }
+    public virtual void Action(InputAction.CallbackContext context)
+    {
+        foreach (GameObject obj in inRange)
+        {
+            Debug.Log($"Object: " + obj.name);
+            if (obj.CompareTag("Interactive"))
+            {
+                CmdAction(obj.GetComponent<Interactive>().netId);
+            }
+        }
+    }
 
     #endregion
 
@@ -185,6 +195,21 @@ public class PlayerController : NetworkBehaviour
             if (controller.playerInput)
                 controller.KillPlayer();
         }
+    }
+    #endregion
+
+    #region Mirror
+    [Command]
+    private void CmdAction(uint netId)
+    {
+        Debug.Log("CmdAction id: " + netId);
+        RpcAction(netId);
+    }
+    [ClientRpc]
+    private void RpcAction(uint netId)
+    {
+        Debug.Log("RpcAction id: " + netId);
+        NetworkClient.spawned[netId].gameObject.GetComponent<Interactive>().Action();
     }
     #endregion
 }
