@@ -270,8 +270,15 @@ public class PlayerController : NetworkBehaviour
     public void StartFlight()
     {
         //TODO: Start the scape phase (to be decided)
+        //por ahora, muestro una ventana para salir
+        menuScript.NewPhase(Enums.RoundType.HideAndSeek, networkManager.roundTime);
     }
 
+
+    public void EndGame()
+    {
+        menuScript.SwitchPanels(endPanelActive: true);
+    }
 
     #endregion
 }

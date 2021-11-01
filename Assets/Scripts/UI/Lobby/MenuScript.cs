@@ -4,8 +4,10 @@ using UnityEngine;
 using Mirror;
 using UnityEditor;
 using UnityEngine.UI;
+using UnityEngine.Audio;
+using System;
 
-public class MenuScript : NetworkBehaviour
+public class MenuScript : MonoBehaviour
 {
     [Header("Canvas panels")]
     [SerializeField] private GameObject mainLobbyPanel;
@@ -13,6 +15,18 @@ public class MenuScript : NetworkBehaviour
     [SerializeField] private GameObject gameMenuPanel;
     [SerializeField] private GameObject deadPanel;
     [SerializeField] private GameObject adminPanel;
+    [SerializeField] private GameObject endPanel;
+    [SerializeField] private GameObject optionsPanel;
+
+    [Header("Configuration items")]
+    public AudioMixer audioMixer;
+    public Dropdown resolutionDropdown;
+    public Dropdown qualityDropdown;
+    public Dropdown textureDropdown;
+    public Dropdown aaDropdown;
+    public Slider volumeSlider;
+    float currentVolume;
+    Resolution[] resolutions;
 
     [Header("Game UI")]
     [SerializeField] private GameObject cooldownsPanel;
@@ -76,6 +90,164 @@ public class MenuScript : NetworkBehaviour
         playerController.StartGame();
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    #endregion
+
+    #region Options
+    public void ShowOptions()
+    {
+        resolutionDropdown.ClearOptions();
+        List<string> options = new List<string>();
+        resolutions = Screen.resolutions;
+        int currentResolutionIndex = 0;
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " +
+                     resolutions[i].height;
+            options.Add(option);
+            if (resolutions[i].width == Screen.currentResolution.width
+                  && resolutions[i].height == Screen.currentResolution.height)
+                currentResolutionIndex = i;
+        }
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.RefreshShownValue();
+        LoadSettings(currentResolutionIndex);
+
+        // Swap panels
+        SwitchPanels(lobbyPanelActive: false, optionsPanelActive: true);
+    }
+    public void SetVolume(float volume)
+    {
+        audioMixer.SetFloat("Volume", volume);
+        currentVolume = volume;
+    }
+    public void SetScreenMode(int index)
+    {
+        switch (index)
+        {
+            case 0:
+                Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+                break;
+            case 1:
+                Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+                break;
+            case 2:
+                Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+                break;
+            case 3:
+                Screen.fullScreenMode = FullScreenMode.Windowed;
+                break;
+            default:
+                break;
+        }
+    }
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width,
+                  resolution.height, Screen.fullScreen);
+    }
+    public void SetTextureQuality(int textureIndex)
+    {
+        QualitySettings.masterTextureLimit = textureIndex;
+        qualityDropdown.value = 6;
+    }
+    public void SetAntiAliasing(int aaIndex)
+    {
+        QualitySettings.antiAliasing = aaIndex;
+        qualityDropdown.value = 6;
+    }
+    public void SetQuality(int qualityIndex)
+    {
+        if (qualityIndex != 6) // if the user is not using 
+                               //any of the presets
+            QualitySettings.SetQualityLevel(qualityIndex);
+        switch (qualityIndex)
+        {
+            case 0: // quality level - very low
+                textureDropdown.value = 3;
+                aaDropdown.value = 0;
+                break;
+            case 1: // quality level - low
+                textureDropdown.value = 2;
+                aaDropdown.value = 0;
+                break;
+            case 2: // quality level - medium
+                textureDropdown.value = 1;
+                aaDropdown.value = 0;
+                break;
+            case 3: // quality level - high
+                textureDropdown.value = 0;
+                aaDropdown.value = 0;
+                break;
+            case 4: // quality level - very high
+                textureDropdown.value = 0;
+                aaDropdown.value = 1;
+                break;
+            case 5: // quality level - ultra
+                textureDropdown.value = 0;
+                aaDropdown.value = 2;
+                break;
+        }
+
+        qualityDropdown.value = qualityIndex;
+    }
+    public void SaveSettings()
+    {
+        PlayerPrefs.SetInt("QualitySettingPreference",
+                   qualityDropdown.value);
+        PlayerPrefs.SetInt("ResolutionPreference",
+                   resolutionDropdown.value);
+        PlayerPrefs.SetInt("TextureQualityPreference",
+                   textureDropdown.value);
+        PlayerPrefs.SetInt("AntiAliasingPreference",
+                   aaDropdown.value);
+        PlayerPrefs.SetInt("FullscreenPreference",
+                   Convert.ToInt32(Screen.fullScreen));
+        PlayerPrefs.SetFloat("VolumePreference",
+                   currentVolume);
+
+        // Swap panels
+        SwitchPanels(lobbyPanelActive: true, optionsPanelActive: false);
+    }
+    public void LoadSettings(int currentResolutionIndex)
+    {
+        if (PlayerPrefs.HasKey("QualitySettingPreference"))
+            qualityDropdown.value =
+                         PlayerPrefs.GetInt("QualitySettingPreference");
+        else
+            qualityDropdown.value = 3;
+        if (PlayerPrefs.HasKey("ResolutionPreference"))
+            resolutionDropdown.value =
+                         PlayerPrefs.GetInt("ResolutionPreference");
+        else
+            resolutionDropdown.value = currentResolutionIndex;
+        if (PlayerPrefs.HasKey("TextureQualityPreference"))
+            textureDropdown.value =
+                         PlayerPrefs.GetInt("TextureQualityPreference");
+        else
+            textureDropdown.value = 0;
+        if (PlayerPrefs.HasKey("AntiAliasingPreference"))
+            aaDropdown.value =
+                         PlayerPrefs.GetInt("AntiAliasingPreference");
+        else
+            aaDropdown.value = 1;
+        if (PlayerPrefs.HasKey("FullscreenPreference"))
+            Screen.fullScreen =
+            Convert.ToBoolean(PlayerPrefs.GetInt("FullscreenPreference"));
+        else
+            Screen.fullScreen = true;
+        if (PlayerPrefs.HasKey("VolumePreference"))
+            volumeSlider.value =
+                        PlayerPrefs.GetFloat("VolumePreference");
+        else
+            volumeSlider.value =
+                        PlayerPrefs.GetFloat("VolumePreference");
+    }
     #endregion
 
     void Start()
@@ -133,6 +305,7 @@ public class MenuScript : NetworkBehaviour
                         playerController.StartFlight();
                         break;
                     case Enums.RoundType.Flight:
+                        playerController.EndGame();
                         break;
                     default:
                         break;
@@ -153,12 +326,22 @@ public class MenuScript : NetworkBehaviour
     /// <param name="lobbyActive">Activar o desactivar Panel_MainLobby</param>
     /// <param name="gameUIActive">Activar o desactivar Panel_GameUI</param>
     /// <param name="gameMenuActive">Activar o desactivar Panel_GameMenu</param>
-    private void SwitchPanels(bool lobbyPanelActive = true, bool gameUIPanelActive = false, bool gameMenuPanelActive = false, bool deadPanelActive = false)
+    public void SwitchPanels(
+        bool lobbyPanelActive = true,
+        bool gameUIPanelActive = false,
+        bool gameMenuPanelActive = false,
+        bool deadPanelActive = false,
+        bool adminPanelActive = false,
+        bool endPanelActive = false,
+        bool optionsPanelActive = false)
     {
         mainLobbyPanel.SetActive(lobbyPanelActive);
         gameUIPanel.SetActive(gameUIPanelActive);
-        gameMenuPanel.SetActive(gameUIPanelActive);
+        gameMenuPanel.SetActive(gameMenuPanelActive);
         deadPanel.SetActive(deadPanelActive);
+        adminPanel.SetActive(adminPanelActive);
+        endPanel.SetActive(endPanelActive);
+        optionsPanel.SetActive(optionsPanelActive);
     }
 
     /// <summary>
