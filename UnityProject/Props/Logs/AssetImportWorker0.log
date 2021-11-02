@@ -1128,3 +1128,1237 @@ Received Import Request.
   path: Assets/Prefabs/Player/Player_Hunter.prefab
   artifactKey: Guid(f514ed225beb64053bd46da3cfb6367c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Player/Player_Hunter.prefab using Guid(f514ed225beb64053bd46da3cfb6367c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfb6073d3e1fd55e4480e31497e641d') in 0.017893 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002026 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.999 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3000ms)
+		BeginReloadAssembly (247ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (36ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (2639ms)
+			LoadAssemblies (225ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (368ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (1601ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (1412ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (67ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 439.5 MB.
+System memory in use after: 439.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2782.
+Total: 2.511833 ms (FindLiveObjects: 0.120250 ms CreateObjectMapping: 0.045958 ms MarkObjects: 2.329833 ms  DeleteObjects: 0.014750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 159.641332 seconds.
+  path: Assets/Scenes/Test.unity
+  artifactKey: Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test.unity using Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f4a0d81442ec27dbc4c4768dca8299') in 0.018610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 870.880380 seconds.
+  path: Assets/ARPG Effects/Demo/Models/Materials/01 - Default.mat
+  artifactKey: Guid(68de56253b5f8c345a750f46495f9360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARPG Effects/Demo/Models/Materials/01 - Default.mat using Guid(68de56253b5f8c345a750f46495f9360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8530a7e5b698974e2975efa1e8004db5') in 0.143744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/All_animations_on_a_single_timeline/Werewolf_All_Animations.FBX
+  artifactKey: Guid(f2ca65a53be5b8d4dabd6dc9af0991af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/All_animations_on_a_single_timeline/Werewolf_All_Animations.FBX using Guid(f2ca65a53be5b8d4dabd6dc9af0991af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ce367bcd85549d5ebb6ab4d851f654') in 0.302702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Troll/Mesh/Club_Mesh.FBX
+  artifactKey: Guid(1137c2a7c4fb3b544bd9ace1b2d559a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Troll/Mesh/Club_Mesh.FBX using Guid(1137c2a7c4fb3b544bd9ace1b2d559a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832408f86b2f42a03b498f022d9bcfae') in 0.017347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/ARPG Effects/Demo/Models/Materials/02 - Default.mat
+  artifactKey: Guid(cae639901d33c3c4a85916fea4f21a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARPG Effects/Demo/Models/Materials/02 - Default.mat using Guid(cae639901d33c3c4a85916fea4f21a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bde2fe735b5bd6f1644c4de02e2ff8') in 0.007870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Attack(2).FBX
+  artifactKey: Guid(4f7a9f3f047e4d347b7e07dede62acc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Attack(2).FBX using Guid(4f7a9f3f047e4d347b7e07dede62acc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de90f498e4842b6337eea6d331ef4f8') in 0.064480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Attack(1).FBX
+  artifactKey: Guid(a59c86bca09e29d4c8e524c06e8ee762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Attack(1).FBX using Guid(a59c86bca09e29d4c8e524c06e8ee762) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d811b8fa9cbc35c0191a6429acaeebc') in 0.056045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc_hummer_@Walk_Root.FBX
+  artifactKey: Guid(5497702eaea53234ca66a73aafeb0e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc_hummer_@Walk_Root.FBX using Guid(5497702eaea53234ca66a73aafeb0e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935053b325067fa8b259f3cdf0a36cfd') in 0.054801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/1 SKIN-DARKEST-LPUP.mat
+  artifactKey: Guid(7e05ef7409d694c74a16dec33c316bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/1 SKIN-DARKEST-LPUP.mat using Guid(7e05ef7409d694c74a16dec33c316bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de19c40900801d48f59b8c6ad31e9f52') in 0.011482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.945426 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Attack(3).FBX
+  artifactKey: Guid(bcdea623571b49848a8f492b37bf220c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Attack(3).FBX using Guid(bcdea623571b49848a8f492b37bf220c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4527790f4bf79faabc6bd2c01810e34d') in 0.058219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Get_hit.FBX
+  artifactKey: Guid(0ef76146ece28cf47b25a657da892496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Get_hit.FBX using Guid(0ef76146ece28cf47b25a657da892496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34c9e27a24491d76cd67b6c7e7e116e') in 0.052727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.173183 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Idle.FBX
+  artifactKey: Guid(a8ec405206bc2aa4c832d06fd9b14232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Idle.FBX using Guid(a8ec405206bc2aa4c832d06fd9b14232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df0e5117e7d82704f1f4a7a3c09347b') in 0.072021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@shout.FBX
+  artifactKey: Guid(d24478ebd7d93e24dac9c4e8147f6869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@shout.FBX using Guid(d24478ebd7d93e24dac9c4e8147f6869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfcc6de442dd7f219fb32dd51f2e0ef') in 0.053514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Jump.FBX
+  artifactKey: Guid(b989414dbaadee848a5ddae8ffd512d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Jump.FBX using Guid(b989414dbaadee848a5ddae8ffd512d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdab6239c6c8a2f9734f21ecc6462736') in 0.058819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Walk.FBX
+  artifactKey: Guid(0047bae90f81a26468b358afe31fff8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Walk.FBX using Guid(0047bae90f81a26468b358afe31fff8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3601646fe88cfeade2006ff23022166a') in 0.057418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc_hummer_@Run_Root.FBX
+  artifactKey: Guid(10e3ca8b1c6d31a4abccdbb5dcc7c88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc_hummer_@Run_Root.FBX using Guid(10e3ca8b1c6d31a4abccdbb5dcc7c88b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0376d851f8e437b9c69b7254fbb3e8fa') in 0.053241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Run.FBX
+  artifactKey: Guid(f081d8b5c72d9c44394acf383054e5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Run.FBX using Guid(f081d8b5c72d9c44394acf383054e5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b6011e4964c45b6c2085934a178866') in 0.054428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Shout.FBX
+  artifactKey: Guid(1992baba089cdbf469a8bafdea768224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Shout.FBX using Guid(1992baba089cdbf469a8bafdea768224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da3c3bfadaa2de3cb6fafb6311e7312') in 0.091418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(2).FBX
+  artifactKey: Guid(29b70e59352b1fc4ab385750e96826f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(2).FBX using Guid(29b70e59352b1fc4ab385750e96826f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7996819a66727763cf1d9ad8f2040e4e') in 0.094277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(1).FBX
+  artifactKey: Guid(280432bb6e54b2b4ca1ff7316a69005d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(1).FBX using Guid(280432bb6e54b2b4ca1ff7316a69005d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174c1878623742d689a9b8c809611fcf') in 0.091573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Walk.FBX
+  artifactKey: Guid(3ea4445f377b3b844aaf8159f9bdac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Walk.FBX using Guid(3ea4445f377b3b844aaf8159f9bdac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4412d55a3199077723db2b9eb37a1a81') in 0.089536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(3).FBX
+  artifactKey: Guid(ebef3a1d463fd3e4187e69a52799835b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(3).FBX using Guid(ebef3a1d463fd3e4187e69a52799835b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a58aa742a73ec819ebbaeea35006b87') in 0.090378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Dead.FBX
+  artifactKey: Guid(8be9007acded3c54b9698a06bf875561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Animation/Orc(hummer)@Dead.FBX using Guid(8be9007acded3c54b9698a06bf875561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6b8b91a9783d0bdae9d23c31c27c87') in 0.057459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z/Werewolf@Run_Z.FBX
+  artifactKey: Guid(5dbb0400b40f2654692e0e66c8ba6444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z/Werewolf@Run_Z.FBX using Guid(5dbb0400b40f2654692e0e66c8ba6444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a89d6ca63a01de9390492e03ee29549') in 0.097508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z/Werewolf@Run(2)_Z.FBX
+  artifactKey: Guid(f14f7cf8e86eb38419b16c0dea299d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z/Werewolf@Run(2)_Z.FBX using Guid(f14f7cf8e86eb38419b16c0dea299d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a4a4a18760c835c96d87fb87dfc4e7') in 0.113298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Mesh/Werewolf_Mesh.FBX
+  artifactKey: Guid(f0376bfd0c35a76418dcab313ea0a509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Mesh/Werewolf_Mesh.FBX using Guid(f0376bfd0c35a76418dcab313ea0a509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9e3ec250a23d5517d20cb0c2b1ec49') in 0.081129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z/Werewolf@Walk_Z.FBX
+  artifactKey: Guid(273ff2a0ca7c8454eaa0e49705a2d27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z/Werewolf@Walk_Z.FBX using Guid(273ff2a0ca7c8454eaa0e49705a2d27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fd3099a732bb1f4ac2cceae2bd519a') in 0.101396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.502770 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Run.FBX
+  artifactKey: Guid(019bf593628d47645acc665dbc6facd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Run.FBX using Guid(019bf593628d47645acc665dbc6facd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14c4b4d33711faeab4510663e1bde41') in 0.102459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Jump.FBX
+  artifactKey: Guid(b4220780cca39374c81ced9e3e361b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Jump.FBX using Guid(b4220780cca39374c81ced9e3e361b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20aef678f170cec11999c7315c333b49') in 0.106191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Mesh/Orc_Hummer_Mesh.FBX
+  artifactKey: Guid(4f72313223a569f4581326d2df0412eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Orc_Hummer/Mesh/Orc_Hummer_Mesh.FBX using Guid(4f72313223a569f4581326d2df0412eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de0d312da737c5a51c0f88b43dfbe96') in 0.058797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Knight/Mesh/Axe_Knight_Mesh.FBX
+  artifactKey: Guid(7aaf9481490a54e4084105bb76b45dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Knight/Mesh/Axe_Knight_Mesh.FBX using Guid(7aaf9481490a54e4084105bb76b45dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf393bdcbe2b3c28b85097ff8cbe99d8') in 0.015460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Get_Hit.FBX
+  artifactKey: Guid(175d6338d4d58204d851b714e9ba4680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Get_Hit.FBX using Guid(175d6338d4d58204d851b714e9ba4680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713f3ceb8110514a1bd6563b96da2d3b') in 0.094717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/5 SKIN-LIGHT-LPUP.mat
+  artifactKey: Guid(284c356f2f17a644380d230a1abff44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/5 SKIN-LIGHT-LPUP.mat using Guid(284c356f2f17a644380d230a1abff44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5768e3f2a052d880d23f2e52f0aea51') in 0.008050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Knight/Mesh/Knight_Mesh.FBX
+  artifactKey: Guid(498cc5936087f014dac289392e3854e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Knight/Mesh/Knight_Mesh.FBX using Guid(498cc5936087f014dac289392e3854e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51dfde52baa6a65e41490f4e99367e08') in 0.054579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Mesh/Demon_Mesh.FBX
+  artifactKey: Guid(c28d6824e19614c44b0262869a41daf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Mesh/Demon_Mesh.FBX using Guid(c28d6824e19614c44b0262869a41daf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201669e1fee6d0f3caf3999ec0828f16') in 0.113112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/6 SKIN-LIGHTEST-LPUP.mat
+  artifactKey: Guid(d8b3608c06351da4f8e09a879c0ddc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/6 SKIN-LIGHTEST-LPUP.mat using Guid(d8b3608c06351da4f8e09a879c0ddc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf02976aaa81ff3506b83b1c7cb6bdbb') in 0.008026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Run(2).FBX
+  artifactKey: Guid(81e1a20195c6b464ea1ccbe62fd881f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Run(2).FBX using Guid(81e1a20195c6b464ea1ccbe62fd881f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1800e536c996ecb033313d327e2eaa2d') in 0.099782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/3 SKIN-MEDIUM-LPUP.mat
+  artifactKey: Guid(1fff089ce117d4f04a4c4fb00168f400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/3 SKIN-MEDIUM-LPUP.mat using Guid(1fff089ce117d4f04a4c4fb00168f400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be738d8d428b6785789b2e3edc7d3263') in 0.008157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/2 SKIN-DARK-LPUP.mat
+  artifactKey: Guid(7a2d84c5fa819415cad63857c2a30b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/2 SKIN-DARK-LPUP.mat using Guid(7a2d84c5fa819415cad63857c2a30b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3308b27b4438d992d79a5820728d100') in 0.007527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Dead.FBX
+  artifactKey: Guid(3e62fa6cbc4331748bb242056f857e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Dead.FBX using Guid(3e62fa6cbc4331748bb242056f857e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59cf5f1ffa7efee37c90f14c9a2afa5') in 0.099626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Idle.FBX
+  artifactKey: Guid(93df3c1cb29727c4e9fe08c44235f5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Idle.FBX using Guid(93df3c1cb29727c4e9fe08c44235f5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6038e3da512349c07ec09ab5645ec93') in 0.100537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Barbarian/Mesh/Barbarian_Weapon_02_Mesh.FBX
+  artifactKey: Guid(859d9318b4cf2d748873280c4607687b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Barbarian/Mesh/Barbarian_Weapon_02_Mesh.FBX using Guid(859d9318b4cf2d748873280c4607687b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b3ab6dc1b7e5ad01f25ed942d09647b') in 0.015897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(4).FBX
+  artifactKey: Guid(febc0049c5ecea64f87dfc8734cf0cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(4).FBX using Guid(febc0049c5ecea64f87dfc8734cf0cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a3d0945c8fba3763691bbef0ff9c1d') in 0.103391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Dwarf/Mesh/Dwarf_Mesh.FBX
+  artifactKey: Guid(beb1bdaf41305b74189ce0b427c5330e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Dwarf/Mesh/Dwarf_Mesh.FBX using Guid(beb1bdaf41305b74189ce0b427c5330e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3f581d791f70ecd47274a013810a4e') in 0.031248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Barbarian/Mesh/Barbarian_Weapon_01_Mesh.FBX
+  artifactKey: Guid(5aa76736259355b4d8d9641b3f82943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Barbarian/Mesh/Barbarian_Weapon_01_Mesh.FBX using Guid(5aa76736259355b4d8d9641b3f82943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9250c0ff310a43a465200454fafb8444') in 0.014399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(5).FBX
+  artifactKey: Guid(f6a2df19fa1ec0b45b9331a82a237139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_department_clips/Werewolf@Attack(5).FBX using Guid(f6a2df19fa1ec0b45b9331a82a237139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4447aade6eba33bda84aa0c2618f191b') in 0.096444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.819543 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Warrior/Mesh/Warrior_Mesh.FBX
+  artifactKey: Guid(6ac455b967e4ff946a94477be354aa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Warrior/Mesh/Warrior_Mesh.FBX using Guid(6ac455b967e4ff946a94477be354aa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4cce579a13dd5b20768409095e6b93') in 0.087675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/59 EMISSION-WHITE-LPUP.mat
+  artifactKey: Guid(f025c5db938b349a8b450e845b67e20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/59 EMISSION-WHITE-LPUP.mat using Guid(f025c5db938b349a8b450e845b67e20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27dd8809df145559fd9d8d0d144c1d6e') in 0.022517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Survival_M/Materials/26 RED-DARK.mat
+  artifactKey: Guid(42761b2ff4cc844cabebef9cd72cbae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Survival_M/Materials/26 RED-DARK.mat using Guid(42761b2ff4cc844cabebef9cd72cbae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b062885c39e61def8ab4e65cb26af0b') in 0.008004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/61 EMISSION-ORANGE-LPUP.mat
+  artifactKey: Guid(0901bd31274b7c24a907731fa5e16f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/61 EMISSION-ORANGE-LPUP.mat using Guid(0901bd31274b7c24a907731fa5e16f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd760434d7d34271148a3aa9bb81d03cc') in 0.022640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/64 GLASS-LPUP.mat
+  artifactKey: Guid(ffce2a7e1519d465684f3f97da456fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/64 GLASS-LPUP.mat using Guid(ffce2a7e1519d465684f3f97da456fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04ca44a29858223abf5b542ddbe8b99') in 0.010015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/28 ORANGE-LPUP.mat
+  artifactKey: Guid(700ae469e5be9ac4095d29b97116027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/28 ORANGE-LPUP.mat using Guid(700ae469e5be9ac4095d29b97116027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc90720ce3cac8fe39f56673f555ab40') in 0.010036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/63 EMISSION-GREEN-LPUP.mat
+  artifactKey: Guid(c78b6e378cced6e49b9586bae01cbc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/63 EMISSION-GREEN-LPUP.mat using Guid(c78b6e378cced6e49b9586bae01cbc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f29a91a269fcb6e43d8afcba2e2c38') in 0.007875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/29 ORANGE-LIGHT-LPUP.mat
+  artifactKey: Guid(2768469f7f5282a4282f61dbf62e68e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/29 ORANGE-LIGHT-LPUP.mat using Guid(2768469f7f5282a4282f61dbf62e68e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c33c90179a65927b4db97e42899ae0') in 0.008358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/62 EMISSION-YELLOW-LPUP.mat
+  artifactKey: Guid(6c0d25474dfd33349bfeedd203d2a3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/62 EMISSION-YELLOW-LPUP.mat using Guid(6c0d25474dfd33349bfeedd203d2a3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6557a20cda879452a6b401c1a91c3905') in 0.014277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_blue.mat
+  artifactKey: Guid(bbe19d7b0ac3cf340a2dfefa39bb372a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_blue.mat using Guid(bbe19d7b0ac3cf340a2dfefa39bb372a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b25ee2a0e69b76eb6854c659478f28') in 0.019476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_crate_01.mat
+  artifactKey: Guid(2deecfb95716d0b4ca45040e60d0a850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_crate_01.mat using Guid(2deecfb95716d0b4ca45040e60d0a850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e733c57d3c31cbbe80256eb9afba4ec9') in 0.024037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_green.mat
+  artifactKey: Guid(36b755e62e5e117488338e90f8e3203e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_green.mat using Guid(36b755e62e5e117488338e90f8e3203e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab35bcbe76b0a402b9dac2c40a1e4d8d') in 0.011282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_white.mat
+  artifactKey: Guid(bbb9f559f684e2941aa81bf20685b3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_white.mat using Guid(bbb9f559f684e2941aa81bf20685b3ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401549165a5999fb0a7283468eb3846d') in 0.010870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_cornerstone.mat
+  artifactKey: Guid(c647c175cae062d4badd4882d52c2731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_cornerstone.mat using Guid(c647c175cae062d4badd4882d52c2731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e3d15028e0d39d02f27f96cc35bf47') in 0.029763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_03.mat
+  artifactKey: Guid(954e569bf0d5d3c4f897deb956ac1c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_03.mat using Guid(954e569bf0d5d3c4f897deb956ac1c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1ccc354b17407399a1164508af8f50') in 0.022382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_01.mat
+  artifactKey: Guid(58242cd8a87c62944973d9412a7092d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_01.mat using Guid(58242cd8a87c62944973d9412a7092d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5471243646dd8e16c9d0ba64431726fb') in 0.019321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_red.mat
+  artifactKey: Guid(609da504531313f4396bd1b36e51f73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_red.mat using Guid(609da504531313f4396bd1b36e51f73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ce6041bddadffb9d6d0eac8321b672') in 0.011367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Doors and Gates/Materials/dfk_gatewall_large.mat
+  artifactKey: Guid(1246412f026156646ad6511fc9fb307c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Doors and Gates/Materials/dfk_gatewall_large.mat using Guid(1246412f026156646ad6511fc9fb307c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878b0bd0864d8a0470aac62dc61af41f') in 0.019892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_02.mat
+  artifactKey: Guid(0b9f4d580c513a14c98310b8f13f925e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_02.mat using Guid(0b9f4d580c513a14c98310b8f13f925e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf745e554d7b021657e5d84d8d74012e') in 0.030671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_pedestal_empty.mat
+  artifactKey: Guid(afd0e83cdf18fc04ab3b5f3c52963521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_pedestal_empty.mat using Guid(afd0e83cdf18fc04ab3b5f3c52963521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e43b1adaa9de7bd6dd33bba5bf63820') in 0.019909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Paintings/Materials/dfk_painting_frame_01.mat
+  artifactKey: Guid(a2346bb9d0641c24d88c5df0d3a487d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Paintings/Materials/dfk_painting_frame_01.mat using Guid(a2346bb9d0641c24d88c5df0d3a487d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be9eea7db3bc48bda6b4b5341201bc0') in 0.012004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_green.mat
+  artifactKey: Guid(504b876dcf299c94b970095cbf882155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_green.mat using Guid(504b876dcf299c94b970095cbf882155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c460e1a6fad1ecae7ef519db835f7a') in 0.024737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/30 YELLOW-LPUP.mat
+  artifactKey: Guid(42caffe1132386f4daa037a9663088b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/30 YELLOW-LPUP.mat using Guid(42caffe1132386f4daa037a9663088b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e608e70bdacde39ead093deca5f4e3') in 0.007680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/31 YELLOW-LIGHT-LPUP.mat
+  artifactKey: Guid(a6c5db515b4e26a468041e9e22e41af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/31 YELLOW-LIGHT-LPUP.mat using Guid(a6c5db515b4e26a468041e9e22e41af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98dfbfede9863331119e6c047d5693b5') in 0.007701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_01_scaled.mat
+  artifactKey: Guid(0e00b726207647f43bde7e5e3f210459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_01_scaled.mat using Guid(0e00b726207647f43bde7e5e3f210459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a9f09199800216d20021225657904d') in 0.015339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_white.mat
+  artifactKey: Guid(cde7b9f8c6073f14cb881c4dbff8604a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_white.mat using Guid(cde7b9f8c6073f14cb881c4dbff8604a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd854e6182dcbf50567c9d053f26c27f8') in 0.021776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_steps_01.mat
+  artifactKey: Guid(80d5d87744c5e834eb2abe1e7522dd21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_steps_01.mat using Guid(80d5d87744c5e834eb2abe1e7522dd21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0037ff741cfc21765a1c4c0e71290d37') in 0.023722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Doors and Gates/Materials/dfk_gate_01.mat
+  artifactKey: Guid(17bfe3270f6270e459c2240a9b84a28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Doors and Gates/Materials/dfk_gate_01.mat using Guid(17bfe3270f6270e459c2240a9b84a28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d554026341577aa12da1d7eedfd23a') in 0.021652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_crate_03.mat
+  artifactKey: Guid(71317c7196608d149ae40a10c0642d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_crate_03.mat using Guid(71317c7196608d149ae40a10c0642d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54584914aa47837acb9d21d58f8e1564') in 0.017218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_05.mat
+  artifactKey: Guid(2a7743c9807eb3c47a98c87dfcca53da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_05.mat using Guid(2a7743c9807eb3c47a98c87dfcca53da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2014ba690cb8afdb29d7756753be146') in 0.025115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Survival_M/Materials/28 ORANGE.mat
+  artifactKey: Guid(adf082016e31c4d6a9fc69f6ca62da90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Survival_M/Materials/28 ORANGE.mat using Guid(adf082016e31c4d6a9fc69f6ca62da90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce07ebbc359ad12118e58147a06fce13') in 0.008417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/58 WHITE-LPUP.mat
+  artifactKey: Guid(11a8c080607cf47c299aff53087e0334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/58 WHITE-LPUP.mat using Guid(11a8c080607cf47c299aff53087e0334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bc92cb6b90c1403b1aa25196fa7c64') in 0.007465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_red.mat
+  artifactKey: Guid(f982692ea7eb35f45b7be2855e80d1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_red.mat using Guid(f982692ea7eb35f45b7be2855e80d1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e33a26f2d739ddd931a4e9423ef35f') in 0.019584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/26 RED-DARK-LPUP.mat
+  artifactKey: Guid(48b31daa83ddb854fadd9402702394e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/26 RED-DARK-LPUP.mat using Guid(48b31daa83ddb854fadd9402702394e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e19b9b7c41bc503858f8cb3c47925a80') in 0.008164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Paintings/Materials/dfk_painting_atlas.mat
+  artifactKey: Guid(596955cc29b097f468ce91077ee74657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Paintings/Materials/dfk_painting_atlas.mat using Guid(596955cc29b097f468ce91077ee74657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee44c6289b2777241fca4635eb81b54') in 0.008668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_04.mat
+  artifactKey: Guid(02b0c2249fe12ca4b8614a62ee81a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Steps, Floor, Ceiling/Materials/dfk_floor_04.mat using Guid(02b0c2249fe12ca4b8614a62ee81a5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6671721d1abc360dc8b23d9ff12739e1') in 0.016470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_crate_02.mat
+  artifactKey: Guid(9b5b80cb0aaa7d541b8c8ce8ab7368fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_crate_02.mat using Guid(9b5b80cb0aaa7d541b8c8ce8ab7368fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b914eaa7543ebdc9c465b24146419d38') in 0.017284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_mirror_01.mat
+  artifactKey: Guid(3b93eac4f6437f6469f8dc9f8268cff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_mirror_01.mat using Guid(3b93eac4f6437f6469f8dc9f8268cff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9718b4f07d0ec62c0e6230a1b687fe94') in 0.018998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/27 RED-LPUP.mat
+  artifactKey: Guid(1d41f8c57e738e44f9f12fc053be388c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/27 RED-LPUP.mat using Guid(1d41f8c57e738e44f9f12fc053be388c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0e37424c3efffed214f36819a1a459') in 0.007966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_yellow.mat
+  artifactKey: Guid(83e07891d0fa5c647aaf30214913edcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_yellow.mat using Guid(83e07891d0fa5c647aaf30214913edcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9722a7c82706510b29742b2a7c8ce891') in 0.018759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Survival_M/Materials/61 EMISSION-ORANGE.mat
+  artifactKey: Guid(f7dde41aee65249668a11e8daf414015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Survival_M/Materials/61 EMISSION-ORANGE.mat using Guid(f7dde41aee65249668a11e8daf414015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4890c269dc437cf7c18b19be1dfe08b') in 0.007346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/4Root_Without_Weapon/Warrior@Walk_Right_Sit_Without_Weapon_Root.FBX
+  artifactKey: Guid(6984ab4b52bc2a94d8c030f958d4bef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/4Root_Without_Weapon/Warrior@Walk_Right_Sit_Without_Weapon_Root.FBX using Guid(6984ab4b52bc2a94d8c030f958d4bef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc1d572b227cc5f3b2a04be7914b680') in 0.151207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Fences/Materials/dfk_ironfence.mat
+  artifactKey: Guid(aa33ba48e55c7d74bbd8006595130e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Fences/Materials/dfk_ironfence.mat using Guid(aa33ba48e55c7d74bbd8006595130e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06fe326e98fd44ce0f9eeb1352400012') in 0.026472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_blue.mat
+  artifactKey: Guid(f40d6f38494eccd46bb1cc83c399e11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_lamps_blue.mat using Guid(f40d6f38494eccd46bb1cc83c399e11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddca47abe2856c62030e91b2f5f26888') in 0.032690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Fences/Materials/dfk_ironhandrail_01.mat
+  artifactKey: Guid(25b2ba8ee7d544c419014a0dbf3c3e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Fences/Materials/dfk_ironhandrail_01.mat using Guid(25b2ba8ee7d544c419014a0dbf3c3e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc776a54e861750673b001f01a0edaee') in 0.022605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_yellow.mat
+  artifactKey: Guid(136d439d89633d74f89cd249a5478545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/Materials/dfk_crystal_yellow.mat using Guid(136d439d89633d74f89cd249a5478545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd609611f41dd2bd99d1d81a675f2d0') in 0.010868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/60 EMMISION-RED-LPUP.mat
+  artifactKey: Guid(ecce1a1895e37524282423faddfd60c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/60 EMMISION-RED-LPUP.mat using Guid(ecce1a1895e37524282423faddfd60c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29457f99b98f2a239296af013a5b45b') in 0.007768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Fences/Materials/dfk_irongrate_01.mat
+  artifactKey: Guid(e75d554305b525f45a13bbf76b81b916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Fences/Materials/dfk_irongrate_01.mat using Guid(e75d554305b525f45a13bbf76b81b916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaab3927c03c62f5f490e27ceb1e6301') in 0.020752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Moldings/Materials/dfk_moldings_01.mat
+  artifactKey: Guid(d030e30b21a7c45479e51b43f14eec31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Moldings/Materials/dfk_moldings_01.mat using Guid(d030e30b21a7c45479e51b43f14eec31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9326c350580d6c9ec5df6c60f66428ca') in 0.023093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/33 GREEN-DARKEST-LPUP.mat
+  artifactKey: Guid(12ca79d1906ac624994fa91e85880fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/33 GREEN-DARKEST-LPUP.mat using Guid(12ca79d1906ac624994fa91e85880fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b39ce6cf868338613513cb6d233ca5') in 0.007213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.586395 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_pedestal_text.mat
+  artifactKey: Guid(ff924946c5830364ebdbe8a8e7d10ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_pedestal_text.mat using Guid(ff924946c5830364ebdbe8a8e7d10ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec0184b0f1d1ee91de95e0ed92406aa') in 0.024865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Pillars and columns/Materials/dfk_pillar_small_01.mat
+  artifactKey: Guid(4f102f2031c70654fb94c5f7de4b61e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Pillars and columns/Materials/dfk_pillar_small_01.mat using Guid(4f102f2031c70654fb94c5f7de4b61e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12afecdd2e45c5f726e19355f6c533c') in 0.023269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.427164 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Pillars and columns/Materials/dfk_pillars_large_01.mat
+  artifactKey: Guid(838391fe049615943b2561deab6f8d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Pillars and columns/Materials/dfk_pillars_large_01.mat using Guid(838391fe049615943b2561deab6f8d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7613b020c2a0445ac0eb7149230974') in 0.021866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Pillars and columns/Materials/dfk_pillars_medium_01.mat
+  artifactKey: Guid(9891c18db88f46d47a1983272fd5b60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Pillars and columns/Materials/dfk_pillars_medium_01.mat using Guid(9891c18db88f46d47a1983272fd5b60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe596e01533428260fb594e2d0ae6fac') in 0.020030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045517 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_railings_01.mat
+  artifactKey: Guid(50acc3ad7e5a36b4682546300fb643b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_railings_01.mat using Guid(50acc3ad7e5a36b4682546300fb643b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12823e20b382133f7411e355d7e475df') in 0.025946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_railings_01_lod.mat
+  artifactKey: Guid(84580153bb7bbe44792b9098c67b8dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_railings_01_lod.mat using Guid(84580153bb7bbe44792b9098c67b8dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89004ca0c07158fa294b5e5864b8e397') in 0.016562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.088343 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Roof/Materials/dfk_roof_tiles.mat
+  artifactKey: Guid(d4e390fde653f654494427ba73ff242f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Roof/Materials/dfk_roof_tiles.mat using Guid(d4e390fde653f654494427ba73ff242f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebef6c54cd73affdc8a4f6376cee665') in 0.113497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_scorpion_01.mat
+  artifactKey: Guid(f43d232d76a7e524ea9b93668d2b0415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_scorpion_01.mat using Guid(f43d232d76a7e524ea9b93668d2b0415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517d915ea05a3eef475fcb01dec47ecf') in 0.022234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_statue_woman_01.mat
+  artifactKey: Guid(72035ba6faa2392438efb9d872964745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_statue_woman_01.mat using Guid(72035ba6faa2392438efb9d872964745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095851b233a1892143c4e4bd727e27cc') in 0.020808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_red.mat
+  artifactKey: Guid(b2cf67c79a9e37c4fb78858f9a45fce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_red.mat using Guid(b2cf67c79a9e37c4fb78858f9a45fce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7d5d3a6ec7b19f2686e6a17f7dd465') in 0.018919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_shelves_01.mat
+  artifactKey: Guid(aad3eb496210016488cb161ec1d2e0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_shelves_01.mat using Guid(aad3eb496210016488cb161ec1d2e0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634524f83fdc9e36b3c197a15eb899ff') in 0.012117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_blue.mat
+  artifactKey: Guid(4b816a35a8305974e8025321c16b2316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_blue.mat using Guid(4b816a35a8305974e8025321c16b2316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe8d8a05efe91da27d74ee8697ce863') in 0.017012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_stairs_wood_01.mat
+  artifactKey: Guid(6e3a1bb1382303f4faba7a9d76941784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_stairs_wood_01.mat using Guid(6e3a1bb1382303f4faba7a9d76941784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244a08e8c41a0f906e348a493aacf4dc') in 0.021657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Common Materials/dfk_simple_metal_brass.mat
+  artifactKey: Guid(279cb6fd398577b4aa2062fffac1dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Common Materials/dfk_simple_metal_brass.mat using Guid(279cb6fd398577b4aa2062fffac1dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7b1e0885e4b006d6b0b198b1cd81b3') in 0.007641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_brown.mat
+  artifactKey: Guid(53d4b7211aac9684db15d4565b5f8772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_brown.mat using Guid(53d4b7211aac9684db15d4565b5f8772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530bd2a13a752ff956ead536bcca00fe') in 0.016458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_clay.mat
+  artifactKey: Guid(c5bcd55efca51344a99319a7b8151567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_clay.mat using Guid(c5bcd55efca51344a99319a7b8151567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b808ff4ee457b85c97394d2adfa513') in 0.019988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_green.mat
+  artifactKey: Guid(ecc5a6b0cf889e348b60bd37737f4748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Containers/Materials/dfk_small_containers_green.mat using Guid(ecc5a6b0cf889e348b60bd37737f4748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77692a0f04e150ecec5b40a7966c0cc5') in 0.016309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_stairs_01.mat
+  artifactKey: Guid(97b9d02c1c143d344b92a8a43d32cf2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Stairs and Railings/Materials/dfk_stairs_01.mat using Guid(97b9d02c1c143d344b92a8a43d32cf2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b61d3b6c3fea29ed008c5b768b0eb43') in 0.017470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_stone_tablet_01.mat
+  artifactKey: Guid(08c2e4e01d42431409c9f818d8618aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_stone_tablet_01.mat using Guid(08c2e4e01d42431409c9f818d8618aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8808049b9f5a087cc3e2e384f7dfc2') in 0.020966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_shelves_02.mat
+  artifactKey: Guid(eb9e3bd5312b8044b8c4efb61f523808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_shelves_02.mat using Guid(eb9e3bd5312b8044b8c4efb61f523808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe04cc61e7a8828f1de86ed875480f4a') in 0.012154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.033863 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_stone_tablet_02.mat
+  artifactKey: Guid(3362d169e28f97244abb9a24be0fe2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Sculptures/Materials/dfk_stone_tablet_02.mat using Guid(3362d169e28f97244abb9a24be0fe2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334373a050e7c9bb6c782d280ff2bdae') in 0.023417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_table_large_01.mat
+  artifactKey: Guid(f5b2b262ab862f74fa47f7ae618b9df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_table_large_01.mat using Guid(f5b2b262ab862f74fa47f7ae618b9df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eebbc109af9100289f733a7891fce08') in 0.019695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002086 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_table_small_01.mat
+  artifactKey: Guid(bb64ca70959bd2543aca86a2b466dcc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_table_small_01.mat using Guid(bb64ca70959bd2543aca86a2b466dcc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99c412b6a34dfeaf177f87cc9f572d8') in 0.014432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tablecloth.mat
+  artifactKey: Guid(b1a625eb67a6904438319704af068c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tablecloth.mat using Guid(b1a625eb67a6904438319704af068c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6692449e5be5d0807ee1dfd58280630e') in 0.012202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025561 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tablecloth_run.mat
+  artifactKey: Guid(d17a657d6fd43ac41b74d539a272e32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tablecloth_run.mat using Guid(d17a657d6fd43ac41b74d539a272e32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0475764f825cccd4dab744f8aaca99f5') in 0.010779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tapestry_blue.mat
+  artifactKey: Guid(a75e5382c18ba7c44bebeb9a781d2dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tapestry_blue.mat using Guid(a75e5382c18ba7c44bebeb9a781d2dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd97a3d1f0d2efa701abf7c9f2f2a2394') in 0.013364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.107306 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tapestry_red.mat
+  artifactKey: Guid(7137b4789f6895f4cb92d4bbaff18763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_tapestry_red.mat using Guid(7137b4789f6895f4cb92d4bbaff18763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b48dab1796b86c71ad0e4c4f48168037') in 0.012210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Version C - Paneled/dfk_wall_c_corner_element_low.fbx
+  artifactKey: Guid(71d8aa6262c2f0c40ad911c27779f593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Version C - Paneled/dfk_wall_c_corner_element_low.fbx using Guid(71d8aa6262c2f0c40ad911c27779f593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb31284d72200147d1157c24f1e4588') in 0.016440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Version C - Paneled/dfk_wall_c_corner_element_small.fbx
+  artifactKey: Guid(bea2a947ba947eb47a82bdc320fa7c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Version C - Paneled/dfk_wall_c_corner_element_small.fbx using Guid(bea2a947ba947eb47a82bdc320fa7c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e02cc9814c5e1b6b3cb7db77544995b') in 0.015996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_valance_black.mat
+  artifactKey: Guid(d4cc18dc95d4afc438e061c361d1a472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_valance_black.mat using Guid(d4cc18dc95d4afc438e061c361d1a472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b3f35a168000b96494a6651430c813') in 0.013442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_wall_b.mat
+  artifactKey: Guid(037fa65b64e7b86459dfed4a79de48ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_wall_b.mat using Guid(037fa65b64e7b86459dfed4a79de48ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c795b2cd7c8535009ae8499492c5de') in 0.019236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_wall_a.mat
+  artifactKey: Guid(84915c941d235bf4d80c69807fa32c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_wall_a.mat using Guid(84915c941d235bf4d80c69807fa32c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09052fd494d46892bbf29c852a01ff79') in 0.019813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Version C - Paneled/dfk_wall_c_corner element.fbx
+  artifactKey: Guid(d44e7ef9334a47140bc5b253a74777dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Version C - Paneled/dfk_wall_c_corner element.fbx using Guid(d44e7ef9334a47140bc5b253a74777dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1b2e41b3b4dd767989940bff3f4829') in 0.016014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_wall_c.mat
+  artifactKey: Guid(4371c8132c5631c4382d237cec812d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Walls/Materials/dfk_wall_c.mat using Guid(4371c8132c5631c4382d237cec812d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c3cb0f6982a78ad9790300c0df7c15') in 0.020084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_valance_purple.mat
+  artifactKey: Guid(42d4c45f4d4fd384d99d9303bebf770b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Decoration/Textiles/Materials/dfk_valance_purple.mat using Guid(42d4c45f4d4fd384d99d9303bebf770b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f823258dcc8f9f1c5a3a65cef0e1ef1') in 0.011089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.175112 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_wardrobe_01.mat
+  artifactKey: Guid(b9885eb7867a21e49abc66f498a62775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Furniture/Materials/dfk_wardrobe_01.mat using Guid(b9885eb7867a21e49abc66f498a62775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e4a526670e3581832e4180332670f1') in 0.022133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Mirror/Examples/Tanks/Textures/(Public Domain) Dirt Hand Painted Texture/Dirt.mat
+  artifactKey: Guid(29b49c27a74f145918356859bd7af511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mirror/Examples/Tanks/Textures/(Public Domain) Dirt Hand Painted Texture/Dirt.mat using Guid(29b49c27a74f145918356859bd7af511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd98bc1af56e2358ea7725c669dea1b9') in 0.009264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Windows/Materials/dfk_window_glass.mat
+  artifactKey: Guid(5996d069f82516f42a4a8b2847a78a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Windows/Materials/dfk_window_glass.mat using Guid(5996d069f82516f42a4a8b2847a78a89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa05636d4dd6da95f74bdae51f6e67c') in 0.083218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Windows/Materials/dfk_window_panel.mat
+  artifactKey: Guid(b81de7cf5cc3b104f951a0f0d7014f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Windows/Materials/dfk_window_panel.mat using Guid(b81de7cf5cc3b104f951a0f0d7014f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c14e7ab910921c3d89163082ee693ac') in 0.017305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Windows/Materials/dfk_window.mat
+  artifactKey: Guid(131d833b7238e844cbcf97c4cc3df251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Windows/Materials/dfk_window.mat using Guid(131d833b7238e844cbcf97c4cc3df251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd502f439e90528e783a47e606ce39b6') in 0.019778 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.933 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2933ms)
+		BeginReloadAssembly (250ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (34ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (89ms)
+		EndReloadAssembly (2568ms)
+			LoadAssemblies (224ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (357ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1574ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (1389ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (61ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 448.6 MB.
+System memory in use after: 448.8 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2786.
+Total: 2.396917 ms (FindLiveObjects: 0.098417 ms CreateObjectMapping: 0.043542 ms MarkObjects: 2.241791 ms  DeleteObjects: 0.012208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001975 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.981 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2982ms)
+		BeginReloadAssembly (245ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (37ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (86ms)
+		EndReloadAssembly (2623ms)
+			LoadAssemblies (218ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (356ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1624ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (51ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (1413ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (65ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 449.0 MB.
+System memory in use after: 449.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2788.
+Total: 2.438167 ms (FindLiveObjects: 0.117792 ms CreateObjectMapping: 0.045125 ms MarkObjects: 2.259291 ms  DeleteObjects: 0.015000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001963 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.964 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2964ms)
+		BeginReloadAssembly (241ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (35ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (83ms)
+		EndReloadAssembly (2606ms)
+			LoadAssemblies (226ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (357ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1602ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (1421ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (64ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 449.5 MB.
+System memory in use after: 449.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2790.
+Total: 2.359666 ms (FindLiveObjects: 0.103792 ms CreateObjectMapping: 0.045041 ms MarkObjects: 2.196250 ms  DeleteObjects: 0.013667 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 487.786270 seconds.
+  path: Assets/Prefabs/Player/Player_Hunter.prefab
+  artifactKey: Guid(f514ed225beb64053bd46da3cfb6367c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_Hunter.prefab using Guid(f514ed225beb64053bd46da3cfb6367c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0c3b1aa88325f589f8cb9d23ba1e77') in 0.220609 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001646 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.895 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2895ms)
+		BeginReloadAssembly (236ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (32ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (2546ms)
+			LoadAssemblies (217ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (352ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1555ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (1370ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (60ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 449.9 MB.
+System memory in use after: 450.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2793.
+Total: 2.331042 ms (FindLiveObjects: 0.106500 ms CreateObjectMapping: 0.042667 ms MarkObjects: 2.167833 ms  DeleteObjects: 0.013208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 201.685714 seconds.
+  path: Assets/Scenes/Test.unity
+  artifactKey: Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test.unity using Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a41ad43a7c50620f1738795aaa6c66') in 0.016596 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006048 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.882 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2883ms)
+		BeginReloadAssembly (246ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (33ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (2529ms)
+			LoadAssemblies (246ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (335ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (1566ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (1371ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (61ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 450.5 MB.
+System memory in use after: 450.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2795.
+Total: 2.380833 ms (FindLiveObjects: 0.102333 ms CreateObjectMapping: 0.043125 ms MarkObjects: 2.220500 ms  DeleteObjects: 0.013875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001681 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.811 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2812ms)
+		BeginReloadAssembly (236ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (37ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (2465ms)
+			LoadAssemblies (216ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (341ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (1500ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (1324ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (67ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 450.9 MB.
+System memory in use after: 451.2 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2797.
+Total: 2.425667 ms (FindLiveObjects: 0.100792 ms CreateObjectMapping: 0.043833 ms MarkObjects: 2.267041 ms  DeleteObjects: 0.013125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

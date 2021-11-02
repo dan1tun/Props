@@ -13,9 +13,20 @@ public class HunterController : PlayerController
     [SerializeField] private int damage;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float attackDuration;
+    [SerializeField] private GameObject attackParticles;
 
     private float nextAttack;
     private float nextMove;
+
+
+    public override void Update()
+    {
+        base.Update();
+
+        if (attackParticles.activeSelf && Time.fixedTime >= nextMove)
+            attackParticles.SetActive(false);
+    }
+
 
     protected override void HandleMovement()
     {
@@ -43,6 +54,7 @@ public class HunterController : PlayerController
 
         nextAttack = Time.fixedTime + attackCooldown;
         nextMove = Time.fixedTime + attackDuration;
+        attackParticles.SetActive(true);
 
         Debug.Log("Fire pressed"); 
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
