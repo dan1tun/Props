@@ -6,15 +6,27 @@ using UnityEngine.InputSystem;
 
 public class HunterController : PlayerController
 {
+    [Header("Attack")]
     [SerializeField] private Transform attackPoint;
     [SerializeField] private Vector3 attackRange;
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private int damage;
     [SerializeField] private float attackCooldown;
+    [SerializeField] private float attackDuration;
 
     private float nextAttack;
+    private float nextMove;
 
-
+    protected override void HandleMovement()
+    {
+        if (Time.fixedTime >= nextMove)
+            base.HandleMovement();
+    }
+    protected override void HandleRotation()
+    {
+        if (Time.fixedTime >= nextMove)
+            base.HandleRotation();
+    }
 
     public override void Action(InputAction.CallbackContext context)
     {
@@ -26,10 +38,11 @@ public class HunterController : PlayerController
     public override void Fire(InputAction.CallbackContext context)
     {
         //Unity hace 3 llamadas: Iniciado, cancelado y terminado. Solo nos interesa la primera
-        if (!context.started || !isLocalPlayer || Time.time < nextAttack)
+        if (!context.started || !isLocalPlayer || Time.fixedTime < nextAttack)
             return;
 
-        nextAttack = Time.time + attackCooldown;
+        nextAttack = Time.fixedTime + attackCooldown;
+        nextMove = Time.fixedTime + attackDuration;
 
         Debug.Log("Fire pressed"); 
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);

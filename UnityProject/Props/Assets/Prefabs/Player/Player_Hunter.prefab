@@ -608,6 +608,7 @@ MonoBehaviour:
     m_Bits: 128
   damage: 1
   attackCooldown: 3
+  attackDuration: 2
 --- !u!136 &8305813961223487005
 CapsuleCollider:
   m_ObjectHideFlags: 0

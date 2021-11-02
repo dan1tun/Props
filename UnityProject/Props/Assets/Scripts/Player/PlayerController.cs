@@ -136,7 +136,7 @@ public class PlayerController : NetworkBehaviour
 
     #region PhysicsActions
 
-    private void HandleMovement()
+    protected virtual void HandleMovement()
     {
         if (moveVector != Vector3.zero && !menuScript.menuOpened)
         {
@@ -145,7 +145,7 @@ public class PlayerController : NetworkBehaviour
         }
     }
 
-    private void HandleRotation()
+    protected virtual void HandleRotation()
     {
         //ignore input 0
         if (lookVector == Vector3.zero || menuScript.menuOpened)
