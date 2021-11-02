@@ -1,0 +1,932 @@
+Unity Editor version:    2021.1.19f1 (5f5eb8bbdc25)
+Branch:                  2021.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.0.1 (Build 21A559)
+Darwin version:          21.1.0
+Architecture:            x86_64
+Running under Rosetta:   YES
+Available memory:        16384 MB
+Using pre-set license
+Pro License: NO
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/daniel/Proyectos/Projects/Unity/Props/UnityProject/Props
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64192
+Successfully changed project path to: /Users/daniel/Proyectos/Projects/Unity/Props/UnityProject/Props
+/Users/daniel/Proyectos/Projects/Unity/Props/UnityProject/Props
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 97.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.19f1 (5f5eb8bbdc25)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/daniel/Proyectos/Projects/Unity/Props/UnityProject/Props/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+2021-11-02 16:31:05.581 Unity[80611:5850450] (null) preferred device: Apple M1 (high power)
+2021-11-02 16:31:05.581 Unity[80611:5850450] Metal devices available: 1
+2021-11-02 16:31:05.581 Unity[80611:5850450] 0: Apple M1 (high power)
+2021-11-02 16:31:05.582 Unity[80611:5850450] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56611
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.19f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.19f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.002579 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 138.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.782 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2782ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (1302ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (900ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (138ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (569ms)
+				ProcessInitializeOnLoadMethodAttributes (153ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007356 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 103.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.174 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3176ms)
+		BeginReloadAssembly (322ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (39ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (2734ms)
+			LoadAssemblies (252ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (372ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (1725ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (104ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (1413ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.1.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2216 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 363.1 MB.
+System memory in use after: 363.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2684.
+Total: 2.817291 ms (FindLiveObjects: 0.126833 ms CreateObjectMapping: 0.063542 ms MarkObjects: 2.538625 ms  DeleteObjects: 0.087250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Test.unity
+  artifactKey: Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test.unity using Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4f7fa628049634429e9ae336862d3a') in 0.020933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Prefabs/NetworkManager.prefab
+  artifactKey: Guid(47425e27d6bd5456791fd2d8055de65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/NetworkManager.prefab using Guid(47425e27d6bd5456791fd2d8055de65a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a45667a2fa85e56e0a3eeb24e4fcf22') in 0.759135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Player/Player_Prop.prefab
+  artifactKey: Guid(c825ccbddb5f74a7eaa74fe4c66cb710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_Prop.prefab using Guid(c825ccbddb5f74a7eaa74fe4c66cb710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952e363454007a54681541fafa436d87') in 0.151202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Prefabs/Player/Player_Hunter.prefab
+  artifactKey: Guid(f514ed225beb64053bd46da3cfb6367c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_Hunter.prefab using Guid(f514ed225beb64053bd46da3cfb6367c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4a536a55f5326d2f9298c1562219b0') in 0.017073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 330.791694 seconds.
+  path: Assets/Robot Kyle/Model
+  artifactKey: Guid(615c91fd558b7412b9c3d7b0da881621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Robot Kyle/Model using Guid(615c91fd558b7412b9c3d7b0da881621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00dcf0f024e50a012e7f3a6de3ccac9') in 0.001390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070975 seconds.
+  path: Assets/Robot Kyle/Model/Robot Kyle.fbx
+  artifactKey: Guid(320b1c2af77554f99a1658df4a6d3d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Robot Kyle/Model/Robot Kyle.fbx using Guid(320b1c2af77554f99a1658df4a6d3d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9b762336253f1989078dcdd0c14fdf') in 0.561610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 122.066958 seconds.
+  path: Assets/Scenes/Lobby.unity
+  artifactKey: Guid(5b8bd3410ded24cd0ac007d43ebd6113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lobby.unity using Guid(5b8bd3410ded24cd0ac007d43ebd6113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cd91009dffd9855aa27c44c4a1c16d') in 0.001847 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005542 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.295 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3296ms)
+		BeginReloadAssembly (299ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (42ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (93ms)
+		EndReloadAssembly (2883ms)
+			LoadAssemblies (273ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (421ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (1751ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (1551ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2191 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 389.0 MB.
+System memory in use after: 389.2 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2702.
+Total: 2.686916 ms (FindLiveObjects: 0.100083 ms CreateObjectMapping: 0.042667 ms MarkObjects: 2.499333 ms  DeleteObjects: 0.043417 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 486.794398 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Scenes
+  artifactKey: Guid(7c474700a20da4546b1b575b0a5a8285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Scenes using Guid(7c474700a20da4546b1b575b0a5a8285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a887f1f9ce12e03152781e53d7e7ee62') in 0.012394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.064969 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Scenes/Demo.unity
+  artifactKey: Guid(197d8662521a9a043a63099baab4d166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Scenes/Demo.unity using Guid(197d8662521a9a043a63099baab4d166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8dc8a772a55b478ed3a50cbb4fb8154') in 0.021641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.922888 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior
+  artifactKey: Guid(7d7c594ebdf12d14da636cc89a7cd2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior using Guid(7d7c594ebdf12d14da636cc89a7cd2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238770e0033748b50034ec53a5906c92') in 0.001555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.295870 seconds.
+  path: Assets/Robot Kyle/Textures/Robot_Color.tga
+  artifactKey: Guid(0a0e8af2869fa45f78e25460db578482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Robot Kyle/Textures/Robot_Color.tga using Guid(0a0e8af2869fa45f78e25460db578482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365ff267b3c32472a12e1c1aa19da501') in 0.628410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Robot Kyle/Textures/Robot_Normal.tga
+  artifactKey: Guid(94c473c9137744d7eabd829f1150da8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Robot Kyle/Textures/Robot_Normal.tga using Guid(94c473c9137744d7eabd829f1150da8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb2112080d6152e10a819768fb2f9d2') in 0.049223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.230883 seconds.
+  path: Assets/Robot Kyle/Materials/Robot_Color.mat
+  artifactKey: Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Robot Kyle/Materials/Robot_Color.mat using Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f007532047040cbbd0eb628228825714') in 0.231520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.080266 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon
+  artifactKey: Guid(d00bdcc61dcfb454d9f9e4a8af7dc7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon using Guid(d00bdcc61dcfb454d9f9e4a8af7dc7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18338e39a6af91199bb31e0e5d0e893a') in 0.000924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.605613 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Prefab/Demon.prefab
+  artifactKey: Guid(009cbbbecafbcfc4f9bc5eb81c9f2bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Prefab/Demon.prefab using Guid(009cbbbecafbcfc4f9bc5eb81c9f2bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beefbdb5432ec5531e6ca86675a5fd60') in 0.286433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Prefab/Demon_Sword.prefab
+  artifactKey: Guid(79303260231974541bacdeb104d6f960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Prefab/Demon_Sword.prefab using Guid(79303260231974541bacdeb104d6f960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e7f02dcb2df9ebfec44bb5a26150523') in 0.020473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000680 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Prefab
+  artifactKey: Guid(822e186f3cc110248a36added6db34a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Prefab using Guid(822e186f3cc110248a36added6db34a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8b973b358c1ec7d572284f252c2b00') in 0.000769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.784982 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(1).FBX
+  artifactKey: Guid(af3581cd566c00940805a7647003537f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(1).FBX using Guid(af3581cd566c00940805a7647003537f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f40955b604dcb2e1bcaf8be42a2a9f') in 0.700721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Get_Hit.FBX
+  artifactKey: Guid(24d8531be5af7d44e9c2c1abfae089e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Get_Hit.FBX using Guid(24d8531be5af7d44e9c2c1abfae089e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287177c776ec08b15b3ba0bd635d72d3') in 0.111504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(2).FBX
+  artifactKey: Guid(53eb2087f47fc154c887789769394527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(2).FBX using Guid(53eb2087f47fc154c887789769394527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c2dead154a63fe53039f203d153b52') in 0.125397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Block_Breakout.FBX
+  artifactKey: Guid(c5b25558f367e4548b7383eb4c97e1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Block_Breakout.FBX using Guid(c5b25558f367e4548b7383eb4c97e1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9c1e9aa1ccf918c76d0a38e4529156') in 0.109784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Block_Get_Hit.FBX
+  artifactKey: Guid(8b767f3d4f6638446887aa1f49d482ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Block_Get_Hit.FBX using Guid(8b767f3d4f6638446887aa1f49d482ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6382c10311d146f17eccda7d805ab326') in 0.109268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Walk.FBX
+  artifactKey: Guid(b492c8956b8de3f41a2b9d6ab32bc5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Walk.FBX using Guid(b492c8956b8de3f41a2b9d6ab32bc5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b178775c0f09fafb6425626cc7be97') in 0.118161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(3).FBX
+  artifactKey: Guid(2fd190ce400ecc042b163489325ef1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(3).FBX using Guid(2fd190ce400ecc042b163489325ef1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7366087042e06b294b1516450e0d51d1') in 0.113331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Run.FBX
+  artifactKey: Guid(a8133934bf248d44b9de5fdce07b2a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Run.FBX using Guid(a8133934bf248d44b9de5fdce07b2a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62bdd645b23cea9ddf00adc53b876bbb') in 0.116455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Idle_ Block.FBX
+  artifactKey: Guid(03e5f7d5d74efa440ae2f97935d4b3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Idle_ Block.FBX using Guid(03e5f7d5d74efa440ae2f97935d4b3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6edbc38d5c21694ae368dbedcb65ef8') in 0.121085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Jump.FBX
+  artifactKey: Guid(992f1c4a70f2dab4ca50176fe4d584d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Jump.FBX using Guid(992f1c4a70f2dab4ca50176fe4d584d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0425fa13744f01fc4efbbd5b50bf91f0') in 0.112423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(4).FBX
+  artifactKey: Guid(152487d3535ab254ba65b06ed6d54a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Attack(4).FBX using Guid(152487d3535ab254ba65b06ed6d54a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240e92e6e87e3563532f5ab025c9d66a') in 0.123793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Dead.FBX
+  artifactKey: Guid(b0c73bb1b4f75134b9db9f9c5fc7123d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Dead.FBX using Guid(b0c73bb1b4f75134b9db9f9c5fc7123d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eeb198830bc3abff5baee8498ca45a2') in 0.123526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Idle.FBX
+  artifactKey: Guid(8d7ce0dfb7474ef40be86943e554775b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Demon@Idle.FBX using Guid(8d7ce0dfb7474ef40be86943e554775b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55cffc2104095a37bd766a900a27686f') in 0.132241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Animator_Controller_Demon.controller
+  artifactKey: Guid(ea2bd7b0f36b8854e9e976fdc604acb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Demon/Animation/Animator_Controller_Demon.controller using Guid(ea2bd7b0f36b8854e9e976fdc604acb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5447db7f8b0d008a1feff4285a414bd') in 0.136989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.991904 seconds.
+  path: Assets/Scenes/Test.unity
+  artifactKey: Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test.unity using Guid(be425d7957a8d4541953cbe5883301ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6eb2bde1bd2af46b7f9885590589c2') in 0.001748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 138.506524 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(1ea1b2ec5af2443f6b5de5e2046cf545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(1ea1b2ec5af2443f6b5de5e2046cf545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e58494636cde6a62b409a4cfedcbd5d') in 0.001366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.722173 seconds.
+  path: Assets/Animations/AnimationController_Hunter.controller
+  artifactKey: Guid(b871951883a5d40439af04d112444ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/AnimationController_Hunter.controller using Guid(b871951883a5d40439af04d112444ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782ad5306457b9bfb65d545fa4d11c9f') in 0.003372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 210.010610 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon
+  artifactKey: Guid(0388313e29bf55a49a15851c89cfc6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon using Guid(0388313e29bf55a49a15851c89cfc6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98031820b3837ae789969b531457f5f2') in 0.001681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.294851 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/2Without_Weapon
+  artifactKey: Guid(8ea400ec0d934d544b2a670d34b41ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/2Without_Weapon using Guid(8ea400ec0d934d544b2a670d34b41ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb54c9524570ae82ad1c62ac363f8027') in 0.001941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.063112 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/3Root_With_Weapon
+  artifactKey: Guid(a949aacab0c44564ab07e3ac3769cbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/3Root_With_Weapon using Guid(a949aacab0c44564ab07e3ac3769cbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39852e1a7e5d622384b883b4f875885') in 0.001431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.679423 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/4Root_Without_Weapon
+  artifactKey: Guid(268a3f2500c8aa740979de3be77b1b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/4Root_Without_Weapon using Guid(268a3f2500c8aa740979de3be77b1b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09df6de75d9bf7b1d945946f3eba371') in 0.001747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.107894 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_1.FBX
+  artifactKey: Guid(be7fad5aa29c38f47b045674b601010c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_1.FBX using Guid(be7fad5aa29c38f47b045674b601010c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0432c64c3b09acd16678fb33e57ac903') in 0.172211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Get_Hit_1.FBX
+  artifactKey: Guid(bc394ae47c8bfc343bdc5781a05822a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Get_Hit_1.FBX using Guid(bc394ae47c8bfc343bdc5781a05822a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26368f1cfcc228e08fe5a4573f5acac4') in 0.141476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk.FBX
+  artifactKey: Guid(7d3f588d22991f94496264c0fb20fb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk.FBX using Guid(7d3f588d22991f94496264c0fb20fb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ef3b630c2c4ad7ac739bd0b74efd02') in 0.164949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Back.FBX
+  artifactKey: Guid(0a10f4ebf5751c44baaf7f556a014880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Back.FBX using Guid(0a10f4ebf5751c44baaf7f556a014880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c19191f3bd2e55a83d541a54d42bc9') in 0.145813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Right.FBX
+  artifactKey: Guid(63d07a4e3529a974897cd3cdfccecac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Right.FBX using Guid(63d07a4e3529a974897cd3cdfccecac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e3723c0d933ddcd6dbde4bc9f29cbf') in 0.136210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_8.FBX
+  artifactKey: Guid(e7b1c94e1e7e8034fa0d56a9edfe2096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_8.FBX using Guid(e7b1c94e1e7e8034fa0d56a9edfe2096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7bb3f543f6d16eab4b22c5e44e7e55') in 0.169799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run.FBX
+  artifactKey: Guid(f18e5ed1231d0ad4eada570182cc5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run.FBX using Guid(f18e5ed1231d0ad4eada570182cc5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc2c9a8594e69eb35c717c5e9f79453') in 0.151612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run_Left.FBX
+  artifactKey: Guid(1a96880fc3e359a44b92b64c287637ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run_Left.FBX using Guid(1a96880fc3e359a44b92b64c287637ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2acb6e1a4b4d0f93d6fb12038a381d42') in 0.140737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Sit.FBX
+  artifactKey: Guid(00aafb1b76e97d9498a9c6e2461a30bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Sit.FBX using Guid(00aafb1b76e97d9498a9c6e2461a30bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6070a71900a2ade6a0826710b06a216') in 0.146138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_1.FBX
+  artifactKey: Guid(fcd9c43c3f2a27b41a45795bb721752c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_1.FBX using Guid(fcd9c43c3f2a27b41a45795bb721752c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa34c51125100a35328e7700b6ffee5') in 0.155379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_5.FBX
+  artifactKey: Guid(f425c16ee47e73249ac108a081715fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_5.FBX using Guid(f425c16ee47e73249ac108a081715fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c3c531bc413c3be903d63196fb882c') in 0.156643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle_Sit.FBX
+  artifactKey: Guid(b6c5e634edfb0bd49ac19d76f276f6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle_Sit.FBX using Guid(b6c5e634edfb0bd49ac19d76f276f6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5111de5a8d56aa9a78375b92a1405adc') in 0.151898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_2.FBX
+  artifactKey: Guid(1925ddcbcc697b645be6624ba3b4235b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_2.FBX using Guid(1925ddcbcc697b645be6624ba3b4235b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea207bb67e6e586570ac297eee3dbf9') in 0.159440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Left_Sit.FBX
+  artifactKey: Guid(08777c76a46225b4b88a9a065f0141d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Left_Sit.FBX using Guid(08777c76a46225b4b88a9a065f0141d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92f57c39d69864398722f5d1895d6b8') in 0.163606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_Right_Sit.FBX
+  artifactKey: Guid(86706dc78c27ce14dab0b78004d7abd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_Right_Sit.FBX using Guid(86706dc78c27ce14dab0b78004d7abd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687d0eedbe1f2c665bc074b0b348ae6a') in 0.156293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Jump.FBX
+  artifactKey: Guid(41c1299fb74f3914fad8614827ce93a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Jump.FBX using Guid(41c1299fb74f3914fad8614827ce93a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf25ce269d2882ccd04495b76334f48') in 0.166766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_2.FBX
+  artifactKey: Guid(45d8ae00d03814e47a6526f8d01d84ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_2.FBX using Guid(45d8ae00d03814e47a6526f8d01d84ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf769fe80fee4db6268f60cbda843981') in 0.168965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Back_Sit.FBX
+  artifactKey: Guid(cc1f5456ada1f1c4d8e0d03a34b67f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Back_Sit.FBX using Guid(cc1f5456ada1f1c4d8e0d03a34b67f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db5cd998601e18d8e55949f30fa5b39') in 0.149950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Left.FBX
+  artifactKey: Guid(9e0c817ca2b58954083e8a5c99f7bfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Left.FBX using Guid(9e0c817ca2b58954083e8a5c99f7bfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8349593fca109bd0cb5492e1308b158d') in 0.151055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Shout.FBX
+  artifactKey: Guid(afa224f2e80796b44afef4d8333b90fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Shout.FBX using Guid(afa224f2e80796b44afef4d8333b90fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da656b572c20ed33e77c6a6a84e2f43b') in 0.169892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle.FBX
+  artifactKey: Guid(3cd5a6938fc4b364bad7ccad7a79daf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle.FBX using Guid(3cd5a6938fc4b364bad7ccad7a79daf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b35e4150f4f42adbcdeaa9143bd94b') in 0.146676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_left.FBX
+  artifactKey: Guid(a884083d9b51b8749aa4e8d1f438afe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_left.FBX using Guid(a884083d9b51b8749aa4e8d1f438afe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606ab38c296fd881cd37e971c88e531f') in 0.141271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle_Othe.FBX
+  artifactKey: Guid(fc66b4171271d7c4f89f2eb894fc0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle_Othe.FBX using Guid(fc66b4171271d7c4f89f2eb894fc0e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95a53ce7e9104000403a0369aaaa0be') in 0.150612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_3.FBX
+  artifactKey: Guid(ae9b2c277a0ed704cb50d5fc76848034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_3.FBX using Guid(ae9b2c277a0ed704cb50d5fc76848034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c23ee3aaf0647085526b13d4bb8a2b') in 0.141477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle_Other_02.FBX
+  artifactKey: Guid(09852b6d123e55644834c32e61e2e254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Idle_Other_02.FBX using Guid(09852b6d123e55644834c32e61e2e254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c305f560972487359808f7feb1cc30') in 0.154136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run_Back.FBX
+  artifactKey: Guid(b5966402ddc19cd488b5762bc1305078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run_Back.FBX using Guid(b5966402ddc19cd488b5762bc1305078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca6a55efb329e2e2a7adc7546136ece') in 0.146579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Get_Hit_2.FBX
+  artifactKey: Guid(45018e6c18ff4f64890fbbc4e0bed7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Get_Hit_2.FBX using Guid(45018e6c18ff4f64890fbbc4e0bed7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c465eccb0b39fbac26a42df17427341b') in 0.144732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Take_Weapon.FBX
+  artifactKey: Guid(56b994b065085d043bc9004d1cb2a318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Take_Weapon.FBX using Guid(56b994b065085d043bc9004d1cb2a318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a6f102f305f94ae94eaeb0dac7e723') in 0.144734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_3.FBX
+  artifactKey: Guid(1d0831d56ec3d6d40b9f2e260c09885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_3.FBX using Guid(1d0831d56ec3d6d40b9f2e260c09885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650a5e37b2fbf1f219e60c3dafce709a') in 0.156401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_4.FBX
+  artifactKey: Guid(31f4f7f370a33104587483db1045acd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Dead_4.FBX using Guid(31f4f7f370a33104587483db1045acd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605959fa861457061425d06ddf5ae314') in 0.150311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_4.FBX
+  artifactKey: Guid(a03db52bc35de4c45983f564cc32e06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_4.FBX using Guid(a03db52bc35de4c45983f564cc32e06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0959df088357c3b690c920457688938e') in 0.152779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_Right.FBX
+  artifactKey: Guid(7d5fc4f41a0954442a8910eb1a09dcf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_Right.FBX using Guid(7d5fc4f41a0954442a8910eb1a09dcf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c938d502d9752cf071830765b0e478') in 0.166560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run_Right.FBX
+  artifactKey: Guid(ece01471fa3614948a0b8bf6b5b4a2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Run_Right.FBX using Guid(ece01471fa3614948a0b8bf6b5b4a2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a250124d8091532552fd9ff67d6cb62') in 0.177670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Sit_Right.FBX
+  artifactKey: Guid(df4dcf14364a99d49a1807c2ee7c8e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Walk_Sit_Right.FBX using Guid(df4dcf14364a99d49a1807c2ee7c8e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c59f1ef5ea84a6022c4d38d9572783c') in 0.156780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_6.FBX
+  artifactKey: Guid(53c4a0faeee020649bdec8e4c9f6dfc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_6.FBX using Guid(53c4a0faeee020649bdec8e4c9f6dfc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad74cf0ce5ce5e44bf86cc1c0e85987c') in 0.157320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_7.FBX
+  artifactKey: Guid(a98a2d85085a5344cb5e609027686f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Attack_7.FBX using Guid(a98a2d85085a5344cb5e609027686f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a866401f4e4cb2a6f73b0d3ab7ffc28b') in 0.157700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_left_Sit.FBX
+  artifactKey: Guid(954b70d9d10ae8541bdcab756e44e2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Ainimations_Barbarian_Bear_Dwarf_Knight_Orc_Warrior/1With_Weapon/Warrior@Turn_left_Sit.FBX using Guid(954b70d9d10ae8541bdcab756e44e2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d72be6a960a6ed525a1ffc0e2fc2c47') in 0.148334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 163.662493 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf
+  artifactKey: Guid(23ae3a19680338648a686765dde38ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf using Guid(23ae3a19680338648a686765dde38ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5329b7fdb869eea37398001b986e7dc4') in 0.001294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.974340 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Prefab
+  artifactKey: Guid(0fac20b46fcb297409832a7162207cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Prefab using Guid(0fac20b46fcb297409832a7162207cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdefafbbab8e9c7b6d679beb565ac55') in 0.001207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.078224 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation
+  artifactKey: Guid(eb7599c169bfdf94ea51dc44d973480e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation using Guid(eb7599c169bfdf94ea51dc44d973480e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85919b29c3b1308404a52db1ec6810f7') in 0.001154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.051645 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/All_animations_on_a_single_timeline
+  artifactKey: Guid(856df2a9179686a45813f7db8f14e470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/All_animations_on_a_single_timeline using Guid(856df2a9179686a45813f7db8f14e470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e264c362ec5f86329ffba5539cd61b49') in 0.001550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.689606 seconds.
+  path: Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z
+  artifactKey: Guid(d73c311fb1347fc42b1437d718b4a5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG_Fentasy_(Pack)/Character_Werewolf/Animation/Animation_motion_axis_Z using Guid(d73c311fb1347fc42b1437d718b4a5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c513be72c79e036199eb3126df484ffb') in 0.001460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.500616 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/alien-ufo_Rig.fbx
+  artifactKey: Guid(b7c75e5204a0a564d921e477214f77dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/alien-ufo_Rig.fbx using Guid(b7c75e5204a0a564d921e477214f77dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b9ae770a80f186af4071d11f3a6a8a') in 0.019616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-beach_Rig.fbx
+  artifactKey: Guid(21fc0b67a1f22604b99132fd973dd725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-beach_Rig.fbx using Guid(21fc0b67a1f22604b99132fd973dd725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d07c10c8e8bd1c5e7868912b56b8602') in 0.023737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-beach_Rig.fbx
+  artifactKey: Guid(0d5ae11bf8e37bd41a33e2336a6dc774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-beach_Rig.fbx using Guid(0d5ae11bf8e37bd41a33e2336a6dc774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cef074599141d177f7f180f38663a54') in 0.016544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/alien-ufo_Rig.fbx
+  artifactKey: Guid(47a48dc74362ee94ba704d3d7f576197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/alien-ufo_Rig.fbx using Guid(47a48dc74362ee94ba704d3d7f576197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0152b5a72e5642a56df3806e073ebd8') in 0.014564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-sport_Rig.fbx
+  artifactKey: Guid(3c61c207a654deb4588b93eab550760e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-sport_Rig.fbx using Guid(3c61c207a654deb4588b93eab550760e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a644d2bec4bd9fc7929e42215ae3333') in 0.018280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-sport_Rig.fbx
+  artifactKey: Guid(99ca07b1fdce3ab4d998f2dad4abc421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-sport_Rig.fbx using Guid(99ca07b1fdce3ab4d998f2dad4abc421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ab12e1b30c0e098430279fbed8c711') in 0.017079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-shirt_Rig.fbx
+  artifactKey: Guid(1f2a1b450369fb04ea779694cb7a4ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-shirt_Rig.fbx using Guid(1f2a1b450369fb04ea779694cb7a4ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a161e4adcf9cf6844827f6fa861d796e') in 0.018389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-shirt_Rig.fbx
+  artifactKey: Guid(ddc2cd291350e1443981d0fb5c96b18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-shirt_Rig.fbx using Guid(ddc2cd291350e1443981d0fb5c96b18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef761e538ae5ebefa816fd496da9e082') in 0.019061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.529735 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/dfk_chandelier.fbx
+  artifactKey: Guid(1f80a4fb5ad39c64f9f6e18095356fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/dfk_chandelier.fbx using Guid(1f80a4fb5ad39c64f9f6e18095356fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e292d6e3f6409b91dee7280ab1be73c') in 0.043985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/dfk_lamp_hanging.fbx
+  artifactKey: Guid(5e34b9fdaee20964c90164f23c3faaf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RunemarkStudio/DarkFantasyKit/Meshes/Lightsources/dfk_lamp_hanging.fbx using Guid(5e34b9fdaee20964c90164f23c3faaf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c9bf596bde70373127841fcbea13c8') in 0.042212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.055099 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/giant_Rig.fbx
+  artifactKey: Guid(21e247af389813f48a64fc68cf019268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/giant_Rig.fbx using Guid(21e247af389813f48a64fc68cf019268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d5447bf0677aec02c7a294ebf58642') in 0.021469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/giant_Rig.fbx
+  artifactKey: Guid(854d7d9e0856a014fb5c17258d9a3ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/giant_Rig.fbx using Guid(854d7d9e0856a014fb5c17258d9a3ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e511eff5ab7256b44bd84a2b135a4e44') in 0.016608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.056367 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/girl-beach_Rig.fbx
+  artifactKey: Guid(04441ebc09d9e59478e5e91c7f6965f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/girl-beach_Rig.fbx using Guid(04441ebc09d9e59478e5e91c7f6965f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9e42af25b3ecf32faadd36c8b978b2') in 0.020290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/girl-beach_Rig.fbx
+  artifactKey: Guid(314c1476203e75646bb2b3461ba3fc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/girl-beach_Rig.fbx using Guid(314c1476203e75646bb2b3461ba3fc5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7153c2c9193aba2b70140b6c169c652b') in 0.018090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.574672 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/girl-skirt_Rig.fbx
+  artifactKey: Guid(a9427ad80072d53468a766efc93108e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/girl-skirt_Rig.fbx using Guid(a9427ad80072d53468a766efc93108e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ae39f464dcd983b038947223bc9da2') in 0.021843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/girl-skirt_Rig.fbx
+  artifactKey: Guid(8365b248a990f4249955c232797f3eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/girl-skirt_Rig.fbx using Guid(8365b248a990f4249955c232797f3eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80b0581c99a31a92d793e6e65e20623') in 0.016651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.084151 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Music_M/guitar-electric-metal.fbx
+  artifactKey: Guid(21f79f36408bc9e43b60e6c229f024b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Music_M/guitar-electric-metal.fbx using Guid(21f79f36408bc9e43b60e6c229f024b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb3726a993c3ace3798c8b1e4295c16') in 0.012746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-astronaut_Rig.fbx
+  artifactKey: Guid(76fb04e3599741345b075939395a028e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-astronaut_Rig.fbx using Guid(76fb04e3599741345b075939395a028e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57f13b3cbd60ef6f15d0a22000c29468') in 0.015962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004431 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-astronaut_Rig.fbx
+  artifactKey: Guid(026bf3cc7bdf702469fdc659b1b03240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-astronaut_Rig.fbx using Guid(026bf3cc7bdf702469fdc659b1b03240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b969d0c632887b405d04e8337dca8d') in 0.016149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-beach_Rig.fbx
+  artifactKey: Guid(524d280c1d16f2242a47d7ebdb2096b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-beach_Rig.fbx using Guid(524d280c1d16f2242a47d7ebdb2096b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22168dfe34fdea30523adee850938dd7') in 0.017257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.241412 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-beach_Rig.fbx
+  artifactKey: Guid(629aa2d3df98ec3418df66d8e6d9986d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-beach_Rig.fbx using Guid(629aa2d3df98ec3418df66d8e6d9986d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b70e696159c7b1374cc29c73d38c57c') in 0.020462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-casual_Rig.fbx
+  artifactKey: Guid(8d699ddfa1ec7c94cbdbaa8430197dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-casual_Rig.fbx using Guid(8d699ddfa1ec7c94cbdbaa8430197dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bde5c81e333493d7f9ef893ad5d0639') in 0.016376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.454703 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-casual_Rig.fbx
+  artifactKey: Guid(335edc00892e0d145b434558fb3ff151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-casual_Rig.fbx using Guid(335edc00892e0d145b434558fb3ff151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc8f3f311c293ea26fa5a8b134781568') in 0.021231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-construction-worker_Rig.fbx
+  artifactKey: Guid(79503c09dcec1554ba05f8b3960ed448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-construction-worker_Rig.fbx using Guid(79503c09dcec1554ba05f8b3960ed448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1405cf91dd24b64f6c6e33020a033b2a') in 0.017262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-cowboy_Rig.fbx
+  artifactKey: Guid(1113d1cb90001a643a9202ecc7936f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-cowboy_Rig.fbx using Guid(1113d1cb90001a643a9202ecc7936f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eca9f6b3d5e3a936a26c1996274d196') in 0.028002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-construction-worker_Rig.fbx
+  artifactKey: Guid(ea34951fcb7cfc74dbeb1428e0532ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-construction-worker_Rig.fbx using Guid(ea34951fcb7cfc74dbeb1428e0532ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526162d8b837a68492a891b22600ad78') in 0.017850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.073225 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-cowboy_Rig.fbx
+  artifactKey: Guid(c37c613df0196cd4ca37aa4f08489ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-cowboy_Rig.fbx using Guid(c37c613df0196cd4ca37aa4f08489ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30450e8c10a4a699cce0e2be8b05c12e') in 0.019302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-cult_Rig.fbx
+  artifactKey: Guid(0ce2a6ed8ed260041ac494879b5982ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-cult_Rig.fbx using Guid(0ce2a6ed8ed260041ac494879b5982ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9847f85acd149e619f5e07f6281b887') in 0.016721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.126022 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-cult_Rig.fbx
+  artifactKey: Guid(129143e961ced29408fc1ab077382754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-cult_Rig.fbx using Guid(129143e961ced29408fc1ab077382754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb63b4137c1d6631afedbe42c3e8703d') in 0.021146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-egypt-soldier_Rig.fbx
+  artifactKey: Guid(e3bb8aacfdf75064a9dbdebbd716eef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-egypt-soldier_Rig.fbx using Guid(e3bb8aacfdf75064a9dbdebbd716eef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef9532ebbf030d22eaf126ed685f6e1') in 0.017293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-egypt-worker_Rig.fbx
+  artifactKey: Guid(30cd989829aca704ba20f6d6aada074a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/man-egypt-worker_Rig.fbx using Guid(30cd989829aca704ba20f6d6aada074a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430c58b6342faa943dde83430603045b') in 0.017557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-egypt-soldier_Rig.fbx
+  artifactKey: Guid(0807df89a60e55e43a5aea788b30802c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/man-egypt-soldier_Rig.fbx using Guid(0807df89a60e55e43a5aea788b30802c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bcb1059253d0f6b24ed63695c17bca') in 0.016668 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005306 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.008 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3009ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (33ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (102ms)
+		EndReloadAssembly (2610ms)
+			LoadAssemblies (268ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1604ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (1421ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (64ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2193 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 433.1 MB.
+System memory in use after: 433.3 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2772.
+Total: 2.519458 ms (FindLiveObjects: 0.104292 ms CreateObjectMapping: 0.043542 ms MarkObjects: 2.353750 ms  DeleteObjects: 0.017083 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
