@@ -6,9 +6,19 @@ using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using System;
+using System.Net;
+using UnityEngine.Networking;
+using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 public class MenuScript : MonoBehaviour
 {
+    [Header("API")]
+    public string apiUrl = "https://addresshelper.azurewebsites.net";
+    private string key;
+    private static readonly HttpClient client = new HttpClient();
+
     [Header("Canvas panels")]
     [SerializeField] private GameObject mainLobbyPanel;
     [SerializeField] private GameObject gameUIPanel;
@@ -48,32 +58,68 @@ public class MenuScript : MonoBehaviour
     private CustomNetworkManager networkManager;
     private Dictionary<Enums.CooldownType, GameObject> cooldowns = new Dictionary<Enums.CooldownType, GameObject>();
 
+    #region api calls
+    string ApiGet(string extra = "", string url = "")
+    {
+        if (String.IsNullOrEmpty(url))
+            url = apiUrl;
 
+        var response = client.GetAsync(url + extra).Result;
+        return response.Content.ReadAsStringAsync().Result;
+    }
+    string ApiPost(string extra)
+    {
+        var response = client.PostAsync(apiUrl + extra, null).Result;
+        return response.Content.ReadAsStringAsync().Result;
+    }
+    string ApiDelete(string extra)
+    {
+        var response = client.DeleteAsync(apiUrl + extra).Result;
+        return response.Content.ReadAsStringAsync().Result;
+    }
+    private string getIp()
+    {
+        string ip = ApiGet(url: "http://checkip.dyndns.org");
+        Debug.Log("IP: " + ip);
+        ip = ip.Substring(ip.IndexOf(":") + 1);
+        ip = ip.Substring(0, ip.IndexOf("<"));
+        return ip.Trim();
+    }
+    #endregion
     #region Online behaviours
 
     public void Host()
     {
         networkManager.StartHost();
-        SwitchPanels(lobbyPanelActive: false, gameUIPanelActive: true); //escondemos los menús, mostramos la UI 
+        SwitchPanels(lobbyPanelActive: false, gameUIPanelActive: true); //escondemos los menús, mostramos la UI
+        //registramos en el AddressManager
+        key = ApiPost($"?ipAddress={getIp()}");
+        Debug.Log("Our key: " + key);
     }
 
-    public void SaveIP(string ip) => networkManager.networkAddress = ip;
+    public void SaveIP(string input) => key = input;
 
     public void Join()
     {
-        networkManager.StartClient();
+        networkManager.networkAddress = ApiGet($"?key={key}");
         SwitchPanels(lobbyPanelActive: false, gameUIPanelActive: true); //escondemos los menús, mostramos la UI 
+        networkManager.StartClient();
+        Debug.Log("IP:" + key);
     }
 
     public void Stop()
     {
+        Debug.Log("Stop called. Nº of players: " + networkManager.numPlayers);
         switch (networkManager.mode)
         {
             case NetworkManagerMode.Host:
+                ApiDelete($"?key={key}");
                 networkManager.StopHost();
                 break;
             case NetworkManagerMode.ClientOnly:
                 networkManager.StopClient();
+                if (networkManager.numPlayers <= 1)
+                    ApiDelete($"?key={key}");
                 break;
         }
     }
@@ -255,6 +301,8 @@ public class MenuScript : MonoBehaviour
         networkManager = this.GetComponent<CustomNetworkManager>();
         menuOpened = false;
         countdownInfoText = countdownInfoObject.GetComponent<Text>();
+        client.DefaultRequestHeaders.ExpectContinue = false;
+
 
         // inicializamos la vista
         SwitchPanels();
@@ -279,7 +327,7 @@ public class MenuScript : MonoBehaviour
                     text = "Hunt begins in... " + (int)countdown;
                     break;
                 case Enums.RoundType.HideAndSeek:
-                    text = "Survival ends in... " + (int)countdown; 
+                    text = "Survival ends in... " + (int)countdown;
                     break;
                 case Enums.RoundType.Flight:
                     text = "Flight before... " + (int)countdown;

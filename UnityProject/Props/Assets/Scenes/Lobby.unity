@@ -354,5 +354,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: NetworkManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8036948322607585807, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: apiUrl
+      value: https://addresshelper.azurewebsites.net
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
