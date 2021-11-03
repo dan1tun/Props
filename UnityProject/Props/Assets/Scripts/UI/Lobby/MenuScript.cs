@@ -102,9 +102,10 @@ public class MenuScript : MonoBehaviour
     public void Join()
     {
         networkManager.networkAddress = ApiGet($"?key={key}");
+        Debug.Log(networkManager.networkAddress);
         SwitchPanels(lobbyPanelActive: false, gameUIPanelActive: true); //escondemos los menús, mostramos la UI 
         networkManager.StartClient();
-        Debug.Log("IP:" + key);
+        Debug.Log("IP:" + networkManager.networkAddress);
     }
 
     public void Stop()

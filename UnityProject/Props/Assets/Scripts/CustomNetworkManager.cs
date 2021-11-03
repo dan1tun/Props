@@ -86,23 +86,19 @@ public class CustomNetworkManager : NetworkManager
 
         // should it be a hunter or a prop?
         bool spawnHunter = false;
+        Debug.Log($"Current hunters: {currentHunters} - Current props: {currentProps}");
         if (currentHunters < maxHunters)
         {
-            if (currentHunters == 0 && Random.value < 0.5f) //first player will have a 1/2 prob. to be a hunter (TODO: do it in a pre-lobby!)
+            if (currentHunters == 0 && Random.value < 0.5f) //first player will have a 1/2 prob. to be a hunter
                 spawnHunter = true;
-            else if (currentHunters >= currentProps) //if theres no props, then it is a prop
+            else if (currentHunters > currentProps) //if theres no props, then it is a prop
                 spawnHunter = false;
             else
             {
-                int baseProbability = (currentProps - currentHunters - 1) / 2;
-                // la proporción 3 a 1 me parece aceptable. La 4 a 1 es demasiado. La partida ideal será de 4 vs 2. Simulación:
-                // PROPS    HUNTERS =>  PROPS   HUNTERS
-                // 0        0           0       1
-                // 0        1           1       1
-                // 1        1           2       1
-                // 2        1           3       1       => A partir de aquí, puede ir a 4 / 1 y luego 4 / 2, o 3 / 2 y luego 4 / 2
-
-
+                float probToBeHunter = (currentProps - currentHunters - 1) / 2;
+                Debug.Log($"Probabilty to be a hunter: {probToBeHunter}");
+                if (Random.value < probToBeHunter)
+                    spawnHunter = true;
             }
         }
         GameObject player;

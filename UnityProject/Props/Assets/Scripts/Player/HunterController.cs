@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DG.Tweening;
 
 public class HunterController : PlayerController
 {
@@ -24,7 +25,7 @@ public class HunterController : PlayerController
         base.Update();
 
         if (attackParticles.activeSelf && Time.fixedTime >= nextMove)
-            attackParticles.SetActive(false);
+            CmdSetParticles(false);
     }
 
 
@@ -54,7 +55,7 @@ public class HunterController : PlayerController
 
         nextAttack = Time.fixedTime + attackCooldown;
         nextMove = Time.fixedTime + attackDuration;
-        attackParticles.SetActive(true);
+        CmdSetParticles(true);
 
         Debug.Log("Fire pressed"); 
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
@@ -73,5 +74,14 @@ public class HunterController : PlayerController
     void CmdSendDamage(uint playerId, int damage)
     {
         NetworkClient.spawned[playerId].GetComponent<PlayerController>().RpcSendDamage(playerId, damage);
+    }
+    [Command]
+    void CmdSetParticles(bool active){
+        RpcSetParticles(active);
+    }
+
+    [ClientRpc]
+    void RpcSetParticles(bool active){
+        attackParticles.SetActive(active);
     }
 }
