@@ -123,11 +123,15 @@ public class PlayerController : NetworkBehaviour
     {
         foreach (GameObject obj in inRange)
         {
-            Debug.Log($"Object: " + obj.name);
-            if (obj.CompareTag("Interactive"))
+            if (obj)
             {
-                CmdAction(obj.GetComponent<Interactive>().netId);
+                Debug.Log($"Object: " + obj.name);
+                if (obj.CompareTag("Interactive"))
+                {
+                    CmdAction(obj.GetComponent<Interactive>().netId);
+                }
             }
+
         }
     }
 

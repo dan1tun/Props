@@ -53,11 +53,14 @@ public class HunterController : PlayerController
         if (!context.started || !isLocalPlayer || Time.fixedTime < nextAttack)
             return;
 
+        // sets the cooldown and shows it in UI
+        menuScript.NewCooldown(Enums.CooldownType.Melee, attackCooldown);
+
         nextAttack = Time.fixedTime + attackCooldown;
         nextMove = Time.fixedTime + attackDuration;
         CmdSetParticles(true);
 
-        Debug.Log("Fire pressed"); 
+        Debug.Log("Fire pressed");
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
         foreach (var hit in hitEnemies)
         {
@@ -76,12 +79,14 @@ public class HunterController : PlayerController
         NetworkClient.spawned[playerId].GetComponent<PlayerController>().RpcSendDamage(playerId, damage);
     }
     [Command]
-    void CmdSetParticles(bool active){
+    void CmdSetParticles(bool active)
+    {
         RpcSetParticles(active);
     }
 
     [ClientRpc]
-    void RpcSetParticles(bool active){
+    void RpcSetParticles(bool active)
+    {
         attackParticles.SetActive(active);
     }
 }

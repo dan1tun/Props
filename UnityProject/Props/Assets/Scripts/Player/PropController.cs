@@ -89,7 +89,7 @@ public class PropController : PlayerController
         {
             foreach (GameObject obj in inRange)
             {
-                if (obj.CompareTag("Prop"))
+                if (obj && obj.CompareTag("Prop"))
                 {
                     //disables the default action (base)
                     continueAction = false;

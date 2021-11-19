@@ -30,7 +30,7 @@ public class Interactive : NetworkBehaviour
         initialPosition = transform.position;
     }
 
-    public void Action(float newBlockTime = 0, bool close = false)
+    public void Action(float newBlockTime = 0, bool fromButton = false)
     {
         Debug.Log("Action");
         if (Time.fixedTime < blockedUntil)
@@ -40,17 +40,14 @@ public class Interactive : NetworkBehaviour
         if (newBlockTime == 0)
             newBlockTime = cooldown;
         blockedUntil = Time.fixedTime + newBlockTime;
-
-        if (close)
-            this.opened = true;
-
+        
         switch (type)
         {
             case Enums.InteractiveType.Button:
                 UseButton();
                 break;
             case Enums.InteractiveType.Door:
-                MoveDoor();
+                MoveDoor(fromButton);
                 break;
             default:
                 break;
@@ -64,13 +61,18 @@ public class Interactive : NetworkBehaviour
         Debug.Log("UseButton called");
         if (target)
         {
-            target.GetComponent<Interactive>().Action(blockTarget ? blockTime : 0, forceClose);
+            target.GetComponent<Interactive>().Action(blockTarget ? blockTime : 0, true);
         }
     }
 
-    public void MoveDoor()
+    public void MoveDoor(bool fromButton)
     {
         Debug.Log("MoveDoor called");
+
+        // si viene de un botón y está cerrado, no movemos la puerta
+        if (fromButton && !this.opened)
+            return;
+
         if (opened)
         {
             opened = false;

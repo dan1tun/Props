@@ -443,8 +443,8 @@ public class MenuScript : MonoBehaviour
         }
 
         // Getting the position
-        int x = 125 + 225 * cooldowns.Count;
-        Vector3 position = new Vector3(x, 100, 0);
+        int x = 50 + 75 * cooldowns.Count;
+        Vector3 position = new Vector3(x, 20, 0);
 
         GameObject newCooldown = Instantiate(cooldownTemplate, cooldownsPanel.transform);
         newCooldown.GetComponent<CooldownItem>().Initialize(image, time, position, this, cooldownType);
