@@ -27,6 +27,7 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private GameObject adminPanel;
     [SerializeField] private GameObject endPanel;
     [SerializeField] private GameObject optionsPanel;
+    [SerializeField] private Text roomKeyText;
 
     [Header("Configuration items")]
     public AudioMixer audioMixer;
@@ -41,9 +42,11 @@ public class MenuScript : MonoBehaviour
     [Header("Game UI")]
     [SerializeField] private GameObject cooldownsPanel;
     [SerializeField] private GameObject countdownInfoObject;
+    [SerializeField] private Image healthSlider;
     private Text countdownInfoText;
     private float countdown;
     private Enums.RoundType currentRoundType;
+    private int actualHealth, maxHealth;
 
     [Header("Cooldowns")]
     [SerializeField] private GameObject cooldownTemplate;
@@ -95,6 +98,7 @@ public class MenuScript : MonoBehaviour
         //registramos en el AddressManager
         key = ApiPost($"?ipAddress={getIp()}");
         Debug.Log("Our key: " + key);
+        this.roomKeyText.text = key;
     }
 
     public void SaveIP(string input) => key = input;
@@ -481,5 +485,23 @@ public class MenuScript : MonoBehaviour
             cooldowns[key].GetComponent<CooldownItem>().UpdateCooldown(position);
 
         }
+    }
+    public void SetMaxHealth(int health){
+        maxHealth = health;
+        actualHealth = maxHealth;
+        UpdateHealthBar();
+    }
+
+    public void SetCurrentHealth(int health){
+        actualHealth = health;
+        UpdateHealthBar();
+    }
+
+    private void UpdateHealthBar(){
+        float amount = (float)actualHealth / maxHealth;
+        healthSlider.fillAmount = amount;
+        Debug.Log("Fillamount: " + amount);
+        Debug.Log("actualHealth: " + actualHealth);
+        Debug.Log("actualHealth: " + maxHealth);
     }
 }

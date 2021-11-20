@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PropController : PlayerController
 {
-    [SerializeField] private GameObject baseBody, newBody;
+    [SerializeField] private GameObject newBody;
     [SerializeField] private float afkTime = 30, afkTimeBetweenChecks = 0.5f, distanceToCheck = 0.2f, transformCooldown = 30;
     public GameObject propIndicator;
 
@@ -79,7 +79,7 @@ public class PropController : PlayerController
     public override void Action(InputAction.CallbackContext context)
     {
         //Unity hace 3 llamadas: Iniciado, cancelado y terminado. Solo nos interesa la primera
-        if (!context.started || !isLocalPlayer)
+        if (!context.started || !isLocalPlayer || isDead)
             return;
 
         bool continueAction = true;

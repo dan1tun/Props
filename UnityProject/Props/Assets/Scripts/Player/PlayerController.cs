@@ -6,11 +6,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : NetworkBehaviour
 {
+    [Header("Stats")]
     [SerializeField] private float speed = 0;
     [SerializeField] private float detectionRange = 7;
     [SerializeField] private float actionDistance;
     [SerializeField] private int health;
+
+    [Header("Object  configuration")]
     [SerializeField] private GameObject virtualCamera, mainCameraObject;
+    [SerializeField] private GameObject baseBody, deadBody;
 
     [HideInInspector] public MenuScript menuScript;
     [HideInInspector, SyncVar] public bool isAdmin;
@@ -28,6 +32,7 @@ public class PlayerController : NetworkBehaviour
     #region Components
     private Rigidbody rigidBody = new Rigidbody();
     private PlayerInput playerInput;
+    protected bool isDead = false;
     private Camera mainCamera;
     private CustomNetworkManager networkManager;
 
@@ -83,12 +88,15 @@ public class PlayerController : NetworkBehaviour
             isAdmin = true;
             menuScript.ShowAdminScreen();
         }
+
+        // Init UI basics
+        menuScript.SetMaxHealth(this.maxHealth);
     }
 
     [Client]
     public virtual void Update()
     {
-
+        
     }
 
     [Client]
@@ -101,10 +109,16 @@ public class PlayerController : NetworkBehaviour
         HandleRotation();
     }
 
+    /// <summary>
+    /// Kills the player, entering a new form that cannot interact with anything
+    /// </summary>
     public void KillPlayer()
     {
-        playerInput.DeactivateInput();
-        menuScript.ShowDeadScreen();
+        this.gameObject.tag = "DeadPlayer";
+        isDead = true;
+
+        deadBody.SetActive(true);
+        baseBody.SetActive(false);
     }
 
     #region INPUT HANDLERS
@@ -117,10 +131,13 @@ public class PlayerController : NetworkBehaviour
 
     public void OpenMenu(InputAction.CallbackContext context) => menuScript.menuOpened = !menuScript.menuOpened;
 
-    public virtual void Fire(InputAction.CallbackContext context) => fireStarted = true;
+    public virtual void Fire(InputAction.CallbackContext context) => fireStarted = !isDead; //si esta muerto, no hará nada
 
     public virtual void Action(InputAction.CallbackContext context)
     {
+        // deshabilitamos la acción para el jugador muerto
+        if (isDead)
+            return;
         foreach (GameObject obj in inRange)
         {
             if (obj)
@@ -205,13 +222,11 @@ public class PlayerController : NetworkBehaviour
         PlayerController controller = NetworkClient.spawned[playerId].GetComponent<PlayerController>();
 
         controller.health -= damage;
+            controller.menuScript.SetCurrentHealth(controller.health);
         if (controller.health <= 0)
         {
             controller.health = 0; // para que no baje de 0
-
-            //TODO: deberíamos matar al jugador. Por ahora, desconectamos su input
-            if (controller.playerInput)
-                controller.KillPlayer();
+            controller.KillPlayer();
         }
     }
     #endregion

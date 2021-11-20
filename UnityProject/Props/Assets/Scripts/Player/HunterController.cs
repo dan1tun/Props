@@ -43,14 +43,14 @@ public class HunterController : PlayerController
     public override void Action(InputAction.CallbackContext context)
     {
         //Unity hace 3 llamadas: Iniciado, cancelado y terminado. Solo nos interesa la primera
-        if (!context.started || !isLocalPlayer)
+        if (!context.started || !isLocalPlayer || isDead)
             return;
         base.Action(context);
     }
     public override void Fire(InputAction.CallbackContext context)
     {
         //Unity hace 3 llamadas: Iniciado, cancelado y terminado. Solo nos interesa la primera
-        if (!context.started || !isLocalPlayer || Time.fixedTime < nextAttack)
+        if (!context.started || !isLocalPlayer || Time.fixedTime < nextAttack || isDead)
             return;
 
         // sets the cooldown and shows it in UI
@@ -64,12 +64,17 @@ public class HunterController : PlayerController
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
         foreach (var hit in hitEnemies)
         {
-            if (!hit.CompareTag("Player"))
-                return;
-            Debug.Log("HIT! " + hit.name);
-            // get the player id
-            uint playerId = hit.GetComponent<PlayerController>().GetPlayerId();
-            CmdSendDamage(playerId, damage);
+            if (hit.CompareTag("Player"))
+            {
+                // get the player id
+                uint playerId = hit.GetComponent<PlayerController>().GetPlayerId();
+                CmdSendDamage(playerId, damage);
+            }
+            else
+            {
+                //is a prop
+                CmdSendDamage(this.playerId, damage);
+            }
         }
     }
 
