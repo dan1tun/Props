@@ -5466,6 +5466,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1914887877249812498, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1680
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914887877249812498, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914887877249812498, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307075937422523936, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8022600624210855136, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5513,6 +5529,18 @@ PrefabInstance:
     - target: {fileID: 8022600624210855139, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
       propertyPath: m_Name
       value: NetworkManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610525360490348564, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610525360490348564, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610525360490348564, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
