@@ -14,7 +14,7 @@ public class PlayerController : NetworkBehaviour
 
     [Header("Object  configuration")]
     [SerializeField] private GameObject virtualCamera, mainCameraObject;
-    [SerializeField] private GameObject baseBody, deadBody;
+    [SerializeField] private GameObject baseBody, deadBody, newBody;
 
     [HideInInspector] public MenuScript menuScript;
     [HideInInspector, SyncVar] public bool isAdmin;
@@ -114,13 +114,15 @@ public class PlayerController : NetworkBehaviour
     /// <summary>
     /// Kills the player, entering a new form that cannot interact with anything
     /// </summary>
-    public void KillPlayer()
+    public virtual void KillPlayer()
     {
         this.gameObject.tag = "DeadPlayer";
         isDead = true;
 
         deadBody.SetActive(true);
         baseBody.SetActive(false);
+        if (newBody)
+            newBody.SetActive(false);
     }
 
     #region INPUT HANDLERS

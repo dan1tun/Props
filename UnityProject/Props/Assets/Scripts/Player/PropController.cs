@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 
 public class PropController : PlayerController
 {
-    [SerializeField] private GameObject newBody;
     [SerializeField] private float afkTime = 30, afkTimeBetweenChecks = 0.5f, distanceToCheck = 0.2f, transformCooldown = 30;
     public GameObject propIndicator;
 
