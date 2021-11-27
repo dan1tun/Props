@@ -53,6 +53,8 @@ public class HunterController : PlayerController
         if (!context.started || !isLocalPlayer || Time.fixedTime < nextAttack || isDead)
             return;
 
+        //plays the sound
+        audioManager.PlayAudio(Enums.SoundType.hunterAttack);
         // sets the cooldown and shows it in UI
         menuScript.NewCooldown(Enums.CooldownType.Melee, attackCooldown);
 

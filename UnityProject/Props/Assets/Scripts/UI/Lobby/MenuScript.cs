@@ -30,7 +30,7 @@ public class MenuScript : MonoBehaviour
     [SerializeField] private Text roomKeyText;
 
     [Header("Configuration items")]
-    public AudioMixer audioMixer;
+    public AudioSource audioMixer;
     public Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
     public Dropdown textureDropdown;
@@ -173,7 +173,7 @@ public class MenuScript : MonoBehaviour
     }
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("Volume", volume);
+        audioMixer.volume = volume;
         currentVolume = volume;
     }
     public void SetScreenMode(int index)
@@ -463,7 +463,12 @@ public class MenuScript : MonoBehaviour
     /// <param name="newCooldown">New timer</param>
     public void UpdateCooldown(Enums.CooldownType cooldownType, float newCooldown)
     {
-        cooldowns[cooldownType].GetComponent<CooldownItem>().UpdateCooldown(newCooldown);
+        try{
+            cooldowns[cooldownType].GetComponent<CooldownItem>().UpdateCooldown(newCooldown);
+        }
+        catch (Exception ex){
+            Debug.Log("Error en MenuScript.UpdateCooldown:" + ex.Message);
+        }
     }
 
     /// <summary>

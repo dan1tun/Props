@@ -91,6 +91,8 @@ public class PropController : PlayerController
             {
                 if (obj && obj.CompareTag("Prop"))
                 {
+                    // play sound
+                    audioManager.PlayAudio(Enums.SoundType.Transform);
                     //disables the default action (base)
                     continueAction = false;
 
@@ -190,5 +192,8 @@ public class PropController : PlayerController
     private void RpcShowAfk(uint playerId, bool showAfk)
     {
         NetworkClient.spawned[playerId].GetComponent<PropController>().propIndicator.SetActive(showAfk);
+
+        if(showAfk && hasAuthority)
+            audioManager.PlayAudio(Enums.SoundType.afk);
     }
 }

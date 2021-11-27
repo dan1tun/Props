@@ -25,6 +25,7 @@ public class Interactive : NetworkBehaviour
     //GLOBAL
     private float blockedUntil;
 
+
     private void Start()
     {
         initialPosition = transform.position;
@@ -40,7 +41,7 @@ public class Interactive : NetworkBehaviour
         if (newBlockTime == 0)
             newBlockTime = cooldown;
         blockedUntil = Time.fixedTime + newBlockTime;
-        
+
         switch (type)
         {
             case Enums.InteractiveType.Button:
@@ -83,5 +84,13 @@ public class Interactive : NetworkBehaviour
             opened = true;
             transform.position -= addPosition;
         }
+    }
+
+    public Enums.SoundType GetAudio()
+    {
+        if (opened)
+            return Enums.SoundType.DoorClose;
+        else
+            return Enums.SoundType.DoorOpen;
     }
 }

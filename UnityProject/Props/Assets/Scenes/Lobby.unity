@@ -2153,23 +2153,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100898, guid: a25b3d9a8119bf047b7609dba7f57302, type: 3}
   m_PrefabInstance: {fileID: 1267992912}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1267992914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267992913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2e40331bc97247c3a08c1f92d12dbd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetVector: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
-  cooldownForPlayer: 10
-  pairedPortals:
-  - {fileID: 0}
 --- !u!65 &1267992915
 BoxCollider:
   m_ObjectHideFlags: 0

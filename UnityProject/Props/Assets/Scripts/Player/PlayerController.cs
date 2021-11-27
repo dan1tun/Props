@@ -35,6 +35,7 @@ public class PlayerController : NetworkBehaviour
     protected bool isDead = false;
     private Camera mainCamera;
     private CustomNetworkManager networkManager;
+    public AudioManager audioManager;
 
     #endregion
 
@@ -73,6 +74,7 @@ public class PlayerController : NetworkBehaviour
 
 
         GameObject networkObj = GameObject.Find("NetworkManager");
+        audioManager = networkObj.GetComponent<AudioManager>();
         networkManager = networkObj.GetComponent<CustomNetworkManager>();
         //TODO: esto es feo. Mirar la forma de hacerlo en el lado del servidor (customnetworkmanager => OnServerAddPlayer / OnClientConnect
         if (menuScript == null)
@@ -145,6 +147,7 @@ public class PlayerController : NetworkBehaviour
                 Debug.Log($"Object: " + obj.name);
                 if (obj.CompareTag("Interactive"))
                 {
+                    audioManager.PlayAudio(obj.GetComponent<Interactive>().GetAudio());
                     CmdAction(obj.GetComponent<Interactive>().netId);
                 }
             }

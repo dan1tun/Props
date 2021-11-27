@@ -9,12 +9,15 @@ public class Portal : MonoBehaviour
     [SerializeField] private float cooldownForPlayer = 1;
     [SerializeField] private List<GameObject> pairedPortals;
 
+    private AudioManager audioManager;
     private float nextTime;
     // Start is called before the first frame update
     void Start()
     {
         if (targetTransform != null)
             targetVector = targetTransform.position;
+        
+        audioManager = Camera.main.gameObject.GetComponentInParent<PlayerController>().audioManager;
     }
 
 
@@ -22,6 +25,8 @@ public class Portal : MonoBehaviour
     {
         if (Time.fixedTime >= nextTime && other.CompareTag("Player"))
         {
+            // play sound
+            //audioManager.PlayAudio(Enums.SoundType.Teleport);
             other.transform.position = targetVector;
             nextTime = Time.fixedTime + cooldownForPlayer;
             foreach (var portal in pairedPortals)

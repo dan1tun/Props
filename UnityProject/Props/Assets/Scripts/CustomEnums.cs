@@ -27,4 +27,13 @@ namespace Enums
         HideAndSeek,
         Flight
     }
+
+    public enum SoundType{
+        DoorClose,
+        DoorOpen,
+        Teleport,
+        Transform,
+        afk,
+        hunterAttack
+    }
 }

@@ -21059,6 +21059,7 @@ MonoBehaviour:
   menuScript: {fileID: 0}
   isAdmin: 0
   gameStarted: 0
+  audioManager: {fileID: 0}
   attackPoint: {fileID: 4692965931005059001}
   attackRange: {x: 1, y: 1, z: 1}
   enemyLayers:
@@ -21066,7 +21067,7 @@ MonoBehaviour:
     m_Bits: 128
   damage: 1
   attackCooldown: 3
-  attackDuration: 2
+  attackDuration: 1.5
   attackParticles: {fileID: 1745842027}
 --- !u!136 &8305813961223487005
 CapsuleCollider:
