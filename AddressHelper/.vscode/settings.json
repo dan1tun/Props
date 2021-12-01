@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin/Release/net5.0/publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/ffa496cd-a992-4f57-86b6-b8ae3c014a6f/resourceGroups/Personal/providers/Microsoft.Web/sites/AddressHelper"
+}
