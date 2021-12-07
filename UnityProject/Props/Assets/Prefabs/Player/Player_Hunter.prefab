@@ -20710,7 +20710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5057409895561348639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.2}
+  m_LocalPosition: {x: 0, y: -0.088, z: 0.524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8305813961223487000}
@@ -20852,10 +20852,10 @@ GameObject:
   - component: {fileID: 8305813961223487000}
   - component: {fileID: 1047792891389734811}
   - component: {fileID: 5379739087410310850}
-  - component: {fileID: 8305813961223487005}
   - component: {fileID: 8305813961223487003}
   - component: {fileID: 6106110119331174295}
   - component: {fileID: 1100158259628507594}
+  - component: {fileID: 829324290068271215}
   m_Layer: 8
   m_Name: Player_Hunter
   m_TagString: Player
@@ -21070,20 +21070,6 @@ MonoBehaviour:
   attackCooldown: 3
   attackDuration: 1.5
   attackParticles: {fileID: 1745842027}
---- !u!136 &8305813961223487005
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8305813961223487014}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.28
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8305813961223487003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21146,6 +21132,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &829324290068271215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305813961223487014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.8, z: 0.8}
+  m_Center: {x: 0, y: 0, z: 0.1}
 --- !u!1 &8554303370727116346
 GameObject:
   m_ObjectHideFlags: 0

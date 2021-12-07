@@ -62,7 +62,6 @@ public class HunterController : PlayerController
         nextMove = Time.fixedTime + attackDuration;
         CmdSetParticles(true);
 
-        Debug.Log("Fire pressed");
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
         bool playerFound = false;
         foreach (var hit in hitEnemies)
@@ -72,8 +71,17 @@ public class HunterController : PlayerController
                 // get the player id
                 uint playerId = hit.GetComponent<PlayerController>().GetPlayerId();
                 CmdSendDamage(playerId, damage);
-                playerFound = true;
-                break;
+
+                //check if he is in range and visible
+                if (Physics.Raycast(attackPoint.position, (hit.transform.position - attackPoint.position), out RaycastHit rayHit))
+                {
+                    if (rayHit.transform.name.Equals(hit.transform.name))
+                    {
+                        Debug.Log("Player found, visible and in range!");
+                        playerFound = true;
+                        break;
+                    }
+                }
             }
             else
             {
