@@ -64,6 +64,7 @@ public class HunterController : PlayerController
 
         Debug.Log("Fire pressed");
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
+        bool playerFound = false;
         foreach (var hit in hitEnemies)
         {
             if (hit.CompareTag("Player"))
@@ -71,12 +72,18 @@ public class HunterController : PlayerController
                 // get the player id
                 uint playerId = hit.GetComponent<PlayerController>().GetPlayerId();
                 CmdSendDamage(playerId, damage);
+                playerFound = true;
+                break;
             }
             else
             {
                 //is a prop
-                CmdSendDamage(this.playerId, damage);
             }
+        }
+        //if no player has been found, then dmg the hunter
+        if (!playerFound)
+        {
+            CmdSendDamage(this.playerId, damage);
         }
     }
 
