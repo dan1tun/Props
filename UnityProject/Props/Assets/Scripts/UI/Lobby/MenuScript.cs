@@ -205,47 +205,41 @@ public class MenuScript : MonoBehaviour
     public void SetTextureQuality(int textureIndex)
     {
         QualitySettings.masterTextureLimit = textureIndex;
-        qualityDropdown.value = 6;
     }
     public void SetAntiAliasing(int aaIndex)
     {
         QualitySettings.antiAliasing = aaIndex;
-        qualityDropdown.value = 6;
     }
     public void SetQuality(int qualityIndex)
     {
-        if (qualityIndex != 6) // if the user is not using 
-                               //any of the presets
-            QualitySettings.SetQualityLevel(qualityIndex);
+        QualitySettings.SetQualityLevel(qualityIndex);
         switch (qualityIndex)
         {
             case 0: // quality level - very low
-                textureDropdown.value = 3;
+                textureDropdown.value = 0;
                 aaDropdown.value = 0;
                 break;
             case 1: // quality level - low
-                textureDropdown.value = 2;
-                aaDropdown.value = 0;
-                break;
-            case 2: // quality level - medium
                 textureDropdown.value = 1;
-                aaDropdown.value = 0;
-                break;
-            case 3: // quality level - high
-                textureDropdown.value = 0;
-                aaDropdown.value = 0;
-                break;
-            case 4: // quality level - very high
-                textureDropdown.value = 0;
                 aaDropdown.value = 1;
                 break;
-            case 5: // quality level - ultra
-                textureDropdown.value = 0;
+            case 2: // quality level - medium
+                textureDropdown.value = 2;
                 aaDropdown.value = 2;
                 break;
+            case 3: // quality level - high
+                textureDropdown.value = 3;
+                aaDropdown.value = 3;
+                break;
+            case 4: // quality level - very high
+                textureDropdown.value = 4;
+                aaDropdown.value = 4;
+                break;
+            case 5: // quality level - ultra
+                textureDropdown.value = 5;
+                aaDropdown.value = 5;
+                break;
         }
-
-        qualityDropdown.value = qualityIndex;
     }
     public void SaveSettings()
     {
@@ -308,6 +302,8 @@ public class MenuScript : MonoBehaviour
         countdownInfoText = countdownInfoObject.GetComponent<Text>();
         client.DefaultRequestHeaders.ExpectContinue = false;
 
+        // init options menu
+        SetQuality(QualitySettings.GetQualityLevel());
 
         // inicializamos la vista
         SwitchPanels();
@@ -337,6 +333,9 @@ public class MenuScript : MonoBehaviour
                 case Enums.RoundType.Flight:
                     text = "Flight before... " + (int)countdown;
                     break;
+                case Enums.RoundType.End:
+                    text = "Game Ended";
+                    break;
                 default:
                     text = "Game didn't start yet";
                     break;
@@ -355,10 +354,14 @@ public class MenuScript : MonoBehaviour
                         playerController.StartRound();
                         break;
                     case Enums.RoundType.HideAndSeek:
-                        playerController.StartFlight();
+                        //playerController.StartFlight();
+                        playerController.EndGame();
                         break;
                     case Enums.RoundType.Flight:
                         playerController.EndGame();
+                        break;
+                    case Enums.RoundType.End:
+                        SwitchPanels(endPanelActive: true, lobbyPanelActive: false);
                         break;
                     default:
                         break;

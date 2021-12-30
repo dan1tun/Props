@@ -100,7 +100,6 @@ public class PropController : PlayerController
 
 
                     // enviamos solicitud al servidor para replicarlo el nuevo cuerpo
-                    //CmdChangeBody(obj.name)
                     CmdChangeBody(obj.name, this.playerId);
 
                     // sets the prop mode to true, so we know we did it

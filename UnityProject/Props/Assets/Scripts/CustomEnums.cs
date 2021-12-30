@@ -25,7 +25,8 @@ namespace Enums
         Starting,
         Preround,
         HideAndSeek,
-        Flight
+        Flight,
+        End
     }
 
     public enum SoundType{

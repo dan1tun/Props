@@ -62,8 +62,8 @@ public class HunterController : PlayerController
         nextMove = Time.fixedTime + attackDuration;
         CmdSetParticles(true);
 
-        Debug.Log("Fire pressed");
         Collider[] hitEnemies = Physics.OverlapBox(attackPoint.position, attackRange, Quaternion.identity, enemyLayers);
+        bool playerFound = false;
         foreach (var hit in hitEnemies)
         {
             if (hit.CompareTag("Player"))
@@ -71,12 +71,27 @@ public class HunterController : PlayerController
                 // get the player id
                 uint playerId = hit.GetComponent<PlayerController>().GetPlayerId();
                 CmdSendDamage(playerId, damage);
+
+                //check if he is in range and visible
+                if (Physics.Raycast(attackPoint.position, (hit.transform.position - attackPoint.position), out RaycastHit rayHit))
+                {
+                    if (rayHit.transform.name.Equals(hit.transform.name))
+                    {
+                        Debug.Log("Player found, visible and in range!");
+                        playerFound = true;
+                        break;
+                    }
+                }
             }
             else
             {
                 //is a prop
-                CmdSendDamage(this.playerId, damage);
             }
+        }
+        //if no player has been found, then dmg the hunter
+        if (!playerFound)
+        {
+            CmdSendDamage(this.playerId, damage);
         }
     }
 
@@ -85,6 +100,7 @@ public class HunterController : PlayerController
     {
         NetworkClient.spawned[playerId].GetComponent<PlayerController>().RpcSendDamage(playerId, damage);
     }
+
     [Command]
     void CmdSetParticles(bool active)
     {
