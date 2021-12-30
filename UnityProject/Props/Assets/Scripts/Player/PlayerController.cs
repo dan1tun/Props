@@ -295,7 +295,7 @@ public class PlayerController : NetworkBehaviour
     {
         //TODO: Start the scape phase (to be decided)
         //por ahora, muestro una ventana para salir
-        menuScript.NewPhase(Enums.RoundType.HideAndSeek, networkManager.roundTime);
+        menuScript.NewPhase(Enums.RoundType.End, 0);
     }
 
 

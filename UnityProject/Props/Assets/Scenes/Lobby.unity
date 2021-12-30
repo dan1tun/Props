@@ -5449,6 +5449,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 163208438519041254, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: roundTime
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 163208438519041254, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: initialTime
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 163208438519041254, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: preRoundTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247567573397208705, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089897248406459446, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3714430696306620687, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521350415137682334, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7716305306995287074, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8022600624210855136, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5496,6 +5528,10 @@ PrefabInstance:
     - target: {fileID: 8022600624210855139, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
       propertyPath: m_Name
       value: NetworkManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453659838533253468, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}
+      propertyPath: m_Text
+      value: THE PROP HUNT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47425e27d6bd5456791fd2d8055de65a, type: 3}

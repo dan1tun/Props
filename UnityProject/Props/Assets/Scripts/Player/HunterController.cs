@@ -100,6 +100,7 @@ public class HunterController : PlayerController
     {
         NetworkClient.spawned[playerId].GetComponent<PlayerController>().RpcSendDamage(playerId, damage);
     }
+
     [Command]
     void CmdSetParticles(bool active)
     {
